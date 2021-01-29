@@ -43,12 +43,12 @@ The most recent version of CUDA.jl also required a compute capability version of
 
 An interim summary of the compute capability versions (ranging from 1.0 through 8.6) are shown in Table 1 below:
 
-**Table 1**
+**Table 1: CUDA Compute Capability and Microarchitecture Information**
 <table>
 <thead class="thead" align="left">
 <tr class="row">
 <th class="entry" align="center" valign="top" rowspan="1" colspan="1">Version Number</th>
-<th class="entry" align="center" valign="top" rowspan="1" colspan="1">Version Name</th>
+<th class="entry" align="center" valign="top" rowspan="1" colspan="1">Microarchitecture Name</th>
 </tr>
 </thead>
 	<tbody>
