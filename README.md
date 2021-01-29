@@ -33,6 +33,12 @@ An interim summary of the compute capability versions are shown in Table 1 below
 
 **Table 1**
 <table>
+<thead class="thead" align="left">
+<tr class="row">
+<th class="entry" align="center" valign="top" rowspan="1" colspan="1">Version Information</th>
+<th class="entry" align="center" valign="top" rowspan="1" colspan="1">Name</th>
+</tr>
+</thead>
 	<tbody>
 		<tr>
 			<td>1.0</td>
@@ -112,14 +118,13 @@ An interim summary of the compute capability versions are shown in Table 1 below
  
 An interim summary of the version information for the various components, as the constituent components in the toolkit are versioned independently as of CUDA v11, are shown in Table 2 below:
 
-**Table 2**
+**Table 2: CUDA 11 Component Version Information**
 <table cellpadding="4" cellspacing="0" frame="border" border="1" rules="all">
-<caption><span >**Table 2: CUDA 11 Component Version Information** </span></caption>
 <thead class="thead" align="left">
 <tr class="row">
-<th class="entry" align="center" valign="top" id="d54e1044" rowspan="1" colspan="1">Component Name</th>
-<th class="entry" align="center" valign="top" id="d54e1047" rowspan="1" colspan="1">Version Information</th>
-<th class="entry" align="center" valign="top" id="d54e1050" rowspan="1" colspan="1">Supported Architectures</th>
+<th class="entry" align="center" valign="top" rowspan="1" colspan="1">Component Name</th>
+<th class="entry" align="center" valign="top" rowspan="1" colspan="1">Version Information</th>
+<th class="entry" align="center" valign="top" rowspan="1" colspan="1">Supported Architectures</th>
 </tr>
 </thead>
 <tbody class="tbody">
