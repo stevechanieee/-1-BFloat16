@@ -6,7 +6,7 @@
 
 Add the CUDA.jl Pkg, via the Pkg API:
 
-<code>julia> import Pkg; Pkg.add("CUDA")</code>
+<pre>julia> import Pkg; Pkg.add("CUDA")</pre>
 
 Precompile the Pkg and download the apropos CUDA toolkit:
 
