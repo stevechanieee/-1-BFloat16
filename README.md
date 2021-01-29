@@ -13,8 +13,9 @@ Precompile the Pkg and download the apropos CUDA toolkit:
 
 <pre>julia> using CUDA</pre>
 
+```javascript
 <pre>julia> CUDA.versioninfo()</pre>
-
+```
 
 
 
