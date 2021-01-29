@@ -31,7 +31,7 @@ julia> [CUDA.capability(dev) for dev in CUDA.devices()]
 
 An interim summary of the compute capability versions are shown in Table 1 below:
 
-
+Table 1
 <table>
 	<tbody>
 		<tr>
@@ -112,6 +112,7 @@ An interim summary of the compute capability versions are shown in Table 1 below
  
 An interim summary of the version information for the various components, as the constituent components in the toolkit are versioned independently as of CUDA v11, are shown in Table 2 below:
 
+Table 2
 <table cellpadding="4" cellspacing="0" frame="border" border="1" rules="all">
 <caption><span >Table 1. CUDA 11 Component Versions</span></caption>
 <thead class="thead" align="left">
@@ -275,6 +276,7 @@ An interim summary of the version information for the various components, as the
 </tbody>
 </table>
 Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/
+
 
 
 With regards to dependencies, please note the deprecations at v11:
