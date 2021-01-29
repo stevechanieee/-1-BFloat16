@@ -35,8 +35,8 @@ An interim summary of the compute capability versions are shown in Table 1 below
 <table>
 <thead class="thead" align="left">
 <tr class="row">
-<th class="entry" align="center" valign="top" rowspan="1" colspan="1">Version Information</th>
-<th class="entry" align="center" valign="top" rowspan="1" colspan="1">Name</th>
+<th class="entry" align="center" valign="top" rowspan="1" colspan="1">Version Number</th>
+<th class="entry" align="center" valign="top" rowspan="1" colspan="1">Version Name</th>
 </tr>
 </thead>
 	<tbody>
@@ -123,7 +123,7 @@ An interim summary of the version information for the various components, as the
 <thead class="thead" align="left">
 <tr class="row">
 <th class="entry" align="center" valign="top" rowspan="1" colspan="1">Component Name</th>
-<th class="entry" align="center" valign="top" rowspan="1" colspan="1">Version Information</th>
+<th class="entry" align="center" valign="top" rowspan="1" colspan="1">Version Number</th>
 <th class="entry" align="center" valign="top" rowspan="1" colspan="1">Supported Architectures</th>
 </tr>
 </thead>
@@ -286,12 +286,12 @@ Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/
 
 With regards to dependencies, please note the deprecations at v11:
 
-cusparse<t>gemmi()
-cusparseXaxpyi
-cusparseXgthr
-cusparseXgthrz
-cusparseXroti
-cusparseXsctr
+1. cusparse<t>gemmi()
+2. cusparseXaxpyi
+3. cusparseXgthr
+4. cusparseXgthrz
+5. cusparseXroti
+6. cusparseXsctr
 
 Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/
 
