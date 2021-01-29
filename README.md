@@ -315,18 +315,18 @@ An interim summary of the toolkit versions (ranging from 1.0 through 11.2.0) are
 <tr><td>11.2.0</td><td>Dec 2020</td></tr>
 <tr><td>11.1.1</td><td>Oct 2020</td></tr>
 <tr><td>11.1.0</td><td>Sept 2020</td></tr>
-<tr><td>11.0 Update1</td><td>Aug 2020</td></tr>
+<tr><td>11.0 Update 1</td><td>Aug 2020</td></tr>
 <tr><td>11.0</td><td>May 2020</td></tr>
 <tr><td>10.2</td><td>Nov 2019</td></tr>
-<tr><td>10.1 update2</td><td>Aug 2019</td></tr>
-<tr><td>10.1 update1</td><td>May 2019</td></tr>
+<tr><td>10.1 Update 2</td><td>Aug 2019</td></tr>
+<tr><td>10.1 Update 1</td><td>May 2019</td></tr>
 <tr><td>10.1</td><td>Feb 2019</td></tr>
 <tr><td>10.0</td><td>Sept 2018</td></tr>
 <tr><td>9.2</td><td>May 2018</td></tr>
 <tr><td>9.1</td><td>Dec 2017</td></tr>
 <tr><td>9.0</td><td>Sept 2017</td></tr>
-<tr><td>8.0 GA2</td><td>Feb 2017</td></tr>
-<tr><td>8.0 GA1</td><td>Sept 2016</td></tr>
+<tr><td>8.0 GA 2</td><td>Feb 2017</td></tr>
+<tr><td>8.0 GA 1</td><td>Sept 2016</td></tr>
 <tr><td>7.5</td><td>Sept 2015</td></tr>
 <tr><td>7.0</td><td>March 2015</td></tr>
 <tr><td>6.5</td><td>August 2014</td></tr>
@@ -339,7 +339,7 @@ An interim summary of the toolkit versions (ranging from 1.0 through 11.2.0) are
 <tr><td>3.2</td><td>Nov 2010</td></tr>
 <tr><td>3.1</td><td>June 2010</td></tr>
 <tr><td>3.0</td><td>March 2010</td></tr>
-<tr><td>OpenCL 1.0 Release</td><td>Sept 2009</td></tr>
+<tr><td>Open Computing Language (OpenCL) Release 1.0 </td><td>Sept 2009</td></tr>
 <tr><td>2.3</td><td>June 2009</td></tr>
 <tr><td>2.2</td><td>May 2009</td></tr>
 <tr><td>2.1</td><td>Jan 2009</td></tr>
@@ -348,6 +348,8 @@ An interim summary of the toolkit versions (ranging from 1.0 through 11.2.0) are
 <tr><td>1.0</td><td>June 2007</td></tr>
 </table>
 Source: https://developer.nvidia.com/cuda-toolkit-archive
+
+OpenCL and CUDA are both Graphics Processing Unit (GPU) programming frameworks, which leverage the use of GPUs. OpenCL is an open standard maintained by the Khronos Group consortium, whose members are listed here: https://www.khronos.org/members/list. CUDA is proprietary to NVIDIA.
 
 The CUDA SDK v11.0 – v11.2 supports Bfloat16.
 
