@@ -11,10 +11,12 @@ Add the CUDA.jl Pkg, via the Pkg API:
 
 Precompile the Pkg and download the apropos CUDA toolkit:
 
-<pre>julia> using CUDA</pre>
+```javascript
+julia> using CUDA
+```
 
 ```javascript
-<pre>julia> CUDA.versioninfo()</pre>
+julia> CUDA.versioninfo()
 ```
 
 
