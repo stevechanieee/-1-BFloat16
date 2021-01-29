@@ -307,6 +307,48 @@ With regards to dependencies, please note the deprecations at v11:
 
 Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/
 
+An interim summary of the toolkit versions (ranging from 1.0 through 11.2.0) are shown in Table 3 below:
+
+**Table 3: CUDA Toolkit Version Information**
+<table border="1">
+<tr><td>Toolkit Version Number</td><td>Release Date</td></tr>
+<tr><td>11.2.0</td><td>Dec 2020</td></tr>
+<tr><td>11.1.1</td><td>Oct 2020</td></tr>
+<tr><td>11.1.0</td><td>Sept 2020</td></tr>
+<tr><td>11.0 Update1</td><td>Aug 2020</td></tr>
+<tr><td>11.0</td><td>May 2020</td></tr>
+<tr><td>10.2</td><td>Nov 2019</td></tr>
+<tr><td>10.1 update2</td><td>Aug 2019</td></tr>
+<tr><td>10.1 update1</td><td>May 2019</td></tr>
+<tr><td>10.1</td><td>Feb 2019</td></tr>
+<tr><td>10.0</td><td>Sept 2018</td></tr>
+<tr><td>9.2</td><td>May 2018</td></tr>
+<tr><td>9.1</td><td>Dec 2017</td></tr>
+<tr><td>9.0</td><td>Sept 2017</td></tr>
+<tr><td>8.0 GA2</td><td>Feb 2017</td></tr>
+<tr><td>8.0 GA1</td><td>Sept 2016</td></tr>
+<tr><td>7.5</td><td>Sept 2015</td></tr>
+<tr><td>7.0</td><td>March 2015</td></tr>
+<tr><td>6.5</td><td>August 2014</td></tr>
+<tr><td>6.0</td><td>April 2014</td></tr>
+<tr><td>5.5</td><td>July 2013</td></tr>
+<tr><td>5.0</td><td>Oct 2012</td></tr>
+<tr><td>4.2</td><td>April 2012</td></tr>
+<tr><td>4.1</td><td>Jan 2012</td></tr>
+<tr><td>4.0</td><td>May 2011</td></tr>
+<tr><td>3.2</td><td>Nov 2010</td></tr>
+<tr><td>3.1</td><td>June 2010</td></tr>
+<tr><td>3.0</td><td>March 2010</td></tr>
+<tr><td>OpenCL 1.0 Release</td><td>Sept 2009</td></tr>
+<tr><td>2.3</td><td>June 2009</td></tr>
+<tr><td>2.2</td><td>May 2009</td></tr>
+<tr><td>2.1</td><td>Jan 2009</td></tr>
+<tr><td>2.0</td><td>Aug 2008</td></tr>
+<tr><td>1.1</td><td>Dec 2007</td></tr>
+<tr><td>1.0</td><td>June 2007</td></tr>
+</table>
+Source: https://developer.nvidia.com/cuda-toolkit-archive
+
 The CUDA SDK v11.0 – v11.2 supports Bfloat16.
 
 
