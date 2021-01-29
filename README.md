@@ -29,6 +29,82 @@ julia> [CUDA.capability(dev) for dev in CUDA.devices()]
  v"8.6"
 ```
 
+<table>
+	<tbody>
+		<tr>
+			<td>1.0</td>
+			<td rowspan="4">Tesla</td>
+		</tr>
+		<tr>
+			<td>1.1</td>
+		</tr>
+		<tr>
+			<td>1.2</td>
+		</tr>
+		<tr>
+			<td>1.3</td>
+		</tr>
+		<tr>
+			<td>2.0</td>
+			<td rowspan="2">Fermi</td>
+		</tr>
+		<tr>
+			<td>2.1</td>
+		</tr>
+		<tr>
+			<td>3.0</td>
+			<td rowspan="4">Kepler</td>
+		</tr>
+		<tr>
+			<td>3.2</td>
+		</tr>
+		<tr>
+			<td>3.5</td>
+		</tr>
+		<tr>
+			<td>3.7</td>
+		</tr>
+		<tr>
+			<td>5.0</td>
+			<td rowspan="3">Maxwell</td>
+		</tr>
+		<tr>
+			<td>5.2</td>
+		</tr>
+		<tr>
+			<td>5.3</td>
+		</tr>
+		<tr>
+			<td>6.0</td>
+			<td rowspan="3">Pascal</td>
+		</tr>
+		<tr>
+			<td>6.1</td>
+		</tr>
+		<tr>
+			<td>6.2</td>
+		</tr>
+		<tr>
+			<td>7.0</td>
+			<td rowspan="2">Volta</td>
+		</tr>
+		<tr>
+			<td>7.2</td>
+		</tr>
+		<tr>
+			<td>7.5</td>
+			<td>Turing</td>
+		</tr>
+		<tr>
+			<td>8.0</td>
+			<td rowspan="2">Ampere
+</td>
+		</tr>
+		<tr>
+			<td>8.6</td>
+		</tr>
+	</tbody>
+</table>
 Reference: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/
 
 Note the deprecations at this version:
