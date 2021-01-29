@@ -4,6 +4,16 @@
 
 
 
+
+#CUDA Progamming in Julia (CUDA.jl)#
+
+The Julia version release history is available here:
+https://github.com/JuliaLang/julia/releases
+
+The most recent version is Julia v1.6.0.
+
+The most recent version of CUDA.jl requires Julia v1.6.0 (or higher).
+
 Add the CUDA.jl Pkg, via the Pkg API:
 
 
@@ -29,7 +39,9 @@ julia> [CUDA.capability(dev) for dev in CUDA.devices()]
  v"8.6"
 ```
 
-An interim summary of the compute capability versions are shown in Table 1 below:
+The most recent version of CUDA.jl also required a compute capability version of 5.0 (or higher).
+
+An interim summary of the compute capability versions (ranging from 1.0 through 8.6) are shown in Table 1 below:
 
 **Table 1**
 <table>
@@ -282,7 +294,8 @@ An interim summary of the version information for the various components, as the
 </table>
 Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/
 
-
+<br/>
+<br/>
 
 With regards to dependencies, please note the deprecations at v11:
 
@@ -295,6 +308,6 @@ With regards to dependencies, please note the deprecations at v11:
 
 Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/
 
-
+The CUDA SDK v11.0 – v11.2 supports Bfloat16.
 
 
