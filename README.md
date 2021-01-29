@@ -114,7 +114,7 @@ An interim summary of the version information for the various components, as the
 
 **Table 2**
 <table cellpadding="4" cellspacing="0" frame="border" border="1" rules="all">
-<caption><span >Table 1. CUDA 11 Component Versions</span></caption>
+<caption><span >**Table 2: CUDA 11 Component Version Information** </span></caption>
 <thead class="thead" align="left">
 <tr class="row">
 <th class="entry" align="center" valign="top" id="d54e1044" rowspan="1" colspan="1">Component Name</th>
