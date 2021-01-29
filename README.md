@@ -26,7 +26,7 @@ Query to confirm the involved device's compute capability:
 ```javascript
 julia> [CUDA.capability(dev) for dev in CUDA.devices()]
 1-element Vector{VersionNumber}:
- v"11.0.3"
+ v"8.6"
 ```
 
 Reference: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/
