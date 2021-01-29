@@ -118,8 +118,7 @@ An interim summary of the compute capability versions (ranging from 1.0 through 
 		</tr>
 		<tr>
 			<td>8.0</td>
-			<td rowspan="2">Ampere
-</td>
+			<td rowspan="2">Ampere</td>
 		</tr>
 		<tr>
 			<td>8.6</td>
