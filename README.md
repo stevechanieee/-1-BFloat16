@@ -204,3 +204,5 @@ Note the version information for the various components, as the constituent comp
 </tr>
 </tbody>
 </table>
+
+Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/
