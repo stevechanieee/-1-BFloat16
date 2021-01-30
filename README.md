@@ -1,5 +1,7 @@
 
 
+A key advantage of utilizing a cloud platform is that the requisite hardware resides in the provider’s data centers. Along this vein, scalability, elasticity, and other desired capabilities are available. For certain testbed/experimentation platforms, some hardware may remain on premise; this segment of the infrastructure that resides locally is considered on-premise-cloud infrastructure. A key advantage is that the more frequently accessed datasets reside on the local network, although core services and other datasets are still provisioned in the cloud.
+
 
 
 According to Juliagpu.org (https://juliagpu.org), "the best supported GPU platform in Julia is NVIDIA CUDA."
