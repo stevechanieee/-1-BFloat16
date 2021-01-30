@@ -2,7 +2,7 @@
 
 
 
-
+According to Juliagpu.org (https://juliagpu.org), "the best supported GPU platform in Julia is NVIDIA CUDA."
 
 
 #CUDA Progamming in Julia (CUDA.jl)#
