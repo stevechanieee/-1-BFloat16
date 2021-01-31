@@ -301,11 +301,41 @@ Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/
 With regards to dependencies, please note the deprecations at v11:
 
 1. cusparse<t>gemmi()
-2. cusparseXaxpyi
-3. cusparseXgthr
-4. cusparseXgthrz
-5. cusparseXroti
-6. cusparseXsctr
+2. cusparseXaxpyi -> cusparseAxpby() 
+3. cusparseXgthr -> cusparseGather()
+4. cusparseXgthrz -> cusparseGather()
+5. cusparseXroti -> cusparseRot()
+6. cusparseXsctr -> cusparseScatter()
+
+
+
+The cuSPARSE library contains a set of basic linear algebra subroutines used for handling sparse matrices. The library targets matrices with a number of (structural) zero elements which represent > 95% of the total entries.
+
+The library routines can be classified into four categories:
+
+Level 1: operations between a vector in sparse format and a vector in dense format
+Level 2: operations between a matrix in sparse format and a vector in dense format
+Level 3: operations between a matrix in sparse format and a set of vectors in dense format (which can also usually be viewed as a dense tall matrix)
+Conversion: operations that allow conversion between different matrix formats, and compression of csr matrices.
+
+
+In numerical analysis and scientific computing, a sparse matrix or sparse array is a matrix in which most of the elements are zero. There is no strict definition how many elements need to be zero for a matrix to be considered sparse but a common criterion is that the number of non-zero elements is roughly the number of rows or columns. By contrast, if most of the elements are nonzero, then the matrix is considered dense. The number of zero-valued elements divided by the total number of elements (e.g., m × n for an m × n matrix) is sometimes referred to as the sparsity of the matrix.
+
+Those that support efficient modification, such as DOK (Dictionary of keys), LIL (List of lists), or COO (Coordinate list). These are typically used to construct the matrices.
+Those that support efficient access and matrix operations, such as CSR (Compressed Sparse Row) or CSC (Compressed Sparse Column).
+
+Specialized computers have been made for sparse matrices,[1] as they are common in the machine learning field.[2] Operations using standard dense-matrix structures and algorithms are slow and inefficient when applied to large sparse matrices as processing and memory are wasted on the zeros. Sparse data is by nature more easily compressed and thus requires significantly less storage. Some very large sparse matrices are infeasible to manipulate using standard dense-matrix algorithms.
+
+What data types are you using? float, double, cuComplex, and cuDoubleComplex.
+
+
+https://docs.nvidia.com/cuda/cusparse/index.html
+
+
+
+Basic Linear Algebra for Sparse Matrices on NVIDIA GPUs
+https://docs.nvidia.com/cuda-libraries/index.html
+	
 
 Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/
 
