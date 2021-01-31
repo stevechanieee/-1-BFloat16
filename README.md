@@ -329,6 +329,8 @@ Specialized computers have been made for sparse matrices,[1] as they are common 
 What data types are you using? float, double, cuComplex, and cuDoubleComplex.
 
 
+If you’ve built your clusters or have an on-premise setup, it’ll be a bit more work and will result in downtime while you replace your container runtime and start it again by modifying the crictl.yaml file to point to the new container runtime or by allowing kubeadm to autodetect the new runtime and apply the configuration.
+
 https://docs.nvidia.com/cuda/cusparse/index.html
 
 
