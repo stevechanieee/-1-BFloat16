@@ -333,7 +333,7 @@ If you’ve built your clusters or have an on-premise setup, it’ll be a bit mo
 
 https://docs.nvidia.com/cuda/cusparse/index.html
 
-
+We wanted to create a solution that is able to run anywhere (super important for OSS), has excellent performance characteristics and can fit in a multi-container architecture. We decided to implement our rule engine processor in F# , our main service was implemented in C# and other components were built using JavaScript / TypeScript and Go.
 
 Basic Linear Algebra for Sparse Matrices on NVIDIA GPUs
 https://docs.nvidia.com/cuda-libraries/index.html
