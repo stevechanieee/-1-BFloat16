@@ -2,15 +2,15 @@
 
 
 
-## Cloud Platform ##
+## Hybridized On-Premise-Cloud Infrastructure. ##
 
 A key advantage of utilizing a cloud platform is that the requisite hardware resides in the cloud platform provider’s various data centers. Along this vein, scalability, elasticity, and other desired capabilities are inherently available. For certain testbed/experimentation platforms and even production environments, some hardware may remain on premise; this segment of the infrastructure that resides locally is considered on-premise-cloud infrastructure. An advantage is that the more frequently accessed datasets reside on the local network, although core services and other datasets may still be provisioned in the cloud. The three significant cloud outages of 2020 (https://techhq.com/2020/12/3-biggest-public-cloud-outages-of-2020/) provide enough pause so as to illuminate the interesting potentialities of a hybridized on-premise-cloud infrastructure.
 
-## Advantage of Cloud Native AI and ML ##
+## Advantage of Cloud Native Artificial Intelligence ##
 
-As the cloud environment is available from anywhere with an Internet connection, it fosters greater accessibility and collaboration. In addition, among other advantages, cloud environments are scalable to support greater volumes of data and a potentially faster computing environment for processing that data (i.e. cloud storage and computing). In essence, the cloud offers an elastic computing environment. great interest to Artificial Intelligence (AI) and Machine Learning (ML) implementers, 
+As the cloud environment is available from anywhere with an Internet connection, it fosters greater accessibility and collaboration. In addition, among other advantages, cloud environments are scalable to support greater volumes of data and a potentially faster computing environment for processing that data (i.e. cloud storage and computing). In essence, the cloud offers an elastic computing environment. This is of great interest to Artificial Intelligence (AI) and Machine Learning (ML) implementers, as the "cloud environment's contributions to AI's ascendancy go beyond just data." 
 
-
+*Source: https://www.ironmountain.com/resources/general-articles/c/cloud-computing-and-ai-have-combined-to-fuel-each-other-s-stunning-growth*
 
 
 ## Julia ##
