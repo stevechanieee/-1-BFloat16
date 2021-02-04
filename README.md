@@ -8,9 +8,26 @@ A key advantage of utilizing a cloud platform is that the requisite hardware res
 
 ## Advantage of Cloud Native Artificial Intelligence ##
 
-As the cloud environment is available from anywhere with an Internet connection, it fosters greater accessibility and collaboration. In addition, among other advantages, cloud environments are scalable to support greater volumes of data and a potentially faster computing environment for processing that data (i.e. cloud storage and computing). In essence, the cloud offers an elastic computing environment. This is of great interest to Artificial Intelligence (AI) and Machine Learning (ML) implementers, as the "cloud environment's contributions to AI's ascendancy go beyond just data." 
+As the cloud environment is available from anywhere with an Internet connection, it fosters greater accessibility and collaboration. In addition, among other advantages, cloud environments are scalable to support greater volumes of data and a potentially faster computing environment for processing that data (i.e. cloud storage and computing). In essence, the cloud offers an elastic computing environment. This is of great interest to Artificial Intelligence (AI) implementers, as the "cloud environment's contributions to AI's ascendancy go beyond just data," particularly for the two most common applications of AI: (1) machine learning (ML), and Deep Learning (DL).
 
 *Source: https://www.ironmountain.com/resources/general-articles/c/cloud-computing-and-ai-have-combined-to-fuel-each-other-s-stunning-growth*
+
+The major cloud platform providers natively support a variety of ML and DL frameworks as well as specific data types (e.g., BFloat16).
+
+
+
+
+OpenCL and CUDA are both Graphics Processing Unit (GPU) programming frameworks, which leverage the use of GPUs. OpenCL is an open standard maintained by the Khronos Group consortium, whose members are listed here: https://www.khronos.org/members/list. CUDA is proprietary to NVIDIA.
+
+The CUDA SDK v11.0 – v11.2 supports the Brain floating-point 16 bit (Bfloat16) format.
+
+The Bfloat16 floating-point format for deep learning is an encoding format, which occupies 16 bits and represents a floating-point number. It is of the format [1:8:7], which has one sign bit, eight exponent bits, and seven mantissa bits plus one implicit mantissa bit. This differs from the IEEE Standard for Floating-Point Arithmetic (IEEE 754) 16-bit floating point (The format is assumed to have an implicit lead bit with value 1 unless the exponent field is stored with all zeros; hence, although there are only 10 bits of significand, there are 11 bits of significand precision), which was not designed for deep learning.
+
+A principal benefit of Bfloat16 is to reduce the storage requirements and increase the computational speed of deep learning algorithms.
+
+
+
+
 
 
 ## Julia ##
@@ -393,13 +410,6 @@ An interim summary of the toolkit versions (ranging from 1.0 through 11.2.0) are
 </table>
 Source: https://developer.nvidia.com/cuda-toolkit-archive
 
-OpenCL and CUDA are both Graphics Processing Unit (GPU) programming frameworks, which leverage the use of GPUs. OpenCL is an open standard maintained by the Khronos Group consortium, whose members are listed here: https://www.khronos.org/members/list. CUDA is proprietary to NVIDIA.
-
-The CUDA SDK v11.0 – v11.2 supports the Brain floating-point 16 bit (Bfloat16) format.
-
-The Bfloat16 floating-point format for deep learning is an encoding format, which occupies 16 bits and represents a floating-point number. It is of the format [1:8:7], which has one sign bit, eight exponent bits, and seven mantissa bits plus one implicit mantissa bit. This differs from the IEEE Standard for Floating-Point Arithmetic (IEEE 754) 16-bit floating point (The format is assumed to have an implicit lead bit with value 1 unless the exponent field is stored with all zeros; hence, although there are only 10 bits of significand, there are 11 bits of significand precision), which was not designed for deep learning.
-
-A principal benefit of Bfloat16 is to reduce the storage requirements and increase the computational speed of deep learning algorithms.
 
 
 
