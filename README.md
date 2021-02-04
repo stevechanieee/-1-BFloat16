@@ -12,7 +12,21 @@ As the cloud environment is available from anywhere with an Internet connection,
 
 *Source: https://www.ironmountain.com/resources/general-articles/c/cloud-computing-and-ai-have-combined-to-fuel-each-other-s-stunning-growth*
 
-The major cloud platform providers natively support a variety of ML and DL frameworks as well as specific data types (e.g., BFloat16).
+The major cloud platform providers natively support a variety of ML and DL frameworks as well as specific data types, via custom processors.
+
+## Custom Processors in the Cloud ##
+
+As just one example, to facilitate ML workloads (typically computationally intensive processes that might run for hours/days), Google developed custom processors entitled Tensor Processing Units (TPUs). These TPUs support a custom floating point format entitled Brain Floating Point Format (BFloat16). BFloat 16 is designed to accelerate matrix multiplication operations.
+
+By way of background information, the Bfloat16 floating-point format for DL is an encoding format, which occupies 16 bits and represents a floating-point number. It is of the format [1:8:7], which has one sign bit, eight exponent bits, and seven mantissa bits plus one implicit mantissa bit. This differs from the IEEE Standard for Floating-Point Arithmetic (IEEE 754) 16-bit floating point (the IEEE 754 16-bit floating format is assumed to have an implicit lead bit with value 1 unless the exponent field is stored with all zeros; hence, although there are only 10 bits of significand, there are 11 bits of significand precision), which was not designed for deep learning.
+
+## Cloud Platform Instance ##
+
+For the involved cloud instance, various drivers, toolkits, and runtime are needed for the envisioned environment. This might include, by way of example, the following: (1) NVIDIA driver, (2) CUDA toolkit, and (3) CUDA runtime.
+
+*Source:https://cloud.google.com/compute/docs/gpus/install-drivers-gpu*
+
+Depending on the GPU type,
 
 
 
@@ -21,7 +35,7 @@ OpenCL and CUDA are both Graphics Processing Unit (GPU) programming frameworks, 
 
 The CUDA SDK v11.0 – v11.2 supports the Brain floating-point 16 bit (Bfloat16) format.
 
-The Bfloat16 floating-point format for deep learning is an encoding format, which occupies 16 bits and represents a floating-point number. It is of the format [1:8:7], which has one sign bit, eight exponent bits, and seven mantissa bits plus one implicit mantissa bit. This differs from the IEEE Standard for Floating-Point Arithmetic (IEEE 754) 16-bit floating point (The format is assumed to have an implicit lead bit with value 1 unless the exponent field is stored with all zeros; hence, although there are only 10 bits of significand, there are 11 bits of significand precision), which was not designed for deep learning.
+
 
 A principal benefit of Bfloat16 is to reduce the storage requirements and increase the computational speed of deep learning algorithms.
 
