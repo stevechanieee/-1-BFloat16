@@ -15,7 +15,7 @@ The most recent version is Julia v1.6.0.
 
 The most recent version of CUDA.jl requires Julia v1.6.0 (or higher).
 
-Add the CUDA.jl Pkg, via the Pkg API:
+From Julia, add the CUDA.jl Pkg, via the Pkg API:
 
 
 ```javascript
