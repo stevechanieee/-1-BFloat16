@@ -16,13 +16,13 @@ The major cloud platform providers natively support a variety of ML and DL frame
 
 ## Custom Processors in the Cloud ##
 
-As just one example, to facilitate ML workloads (typically computationally intensive processes that might run for hours/days), Google developed custom processors entitled Tensor Processing Units (TPUs). These TPUs support a custom floating point format entitled Brain Floating Point Format (BFloat16). BFloat 16 is designed to accelerate matrix multiplication operations.
+As just one example, to facilitate ML workloads (typically computationally intensive processes that might run for hours/days), Google developed custom processors entitled Tensor Processing Units (TPUs). These TPUs support a custom floating point format/data type entitled Brain Floating Point Format (BFloat16). BFloat 16 is designed to accelerate matrix multiplication operations.
 
-By way of background information, the Bfloat16 floating-point format for DL is an encoding format, which occupies 16 bits and represents a floating-point number. It is of the format [1:8:7], which has one sign bit, eight exponent bits, and seven mantissa bits plus one implicit mantissa bit. This differs from the IEEE Standard for Floating-Point Arithmetic (IEEE 754) 16-bit floating point (the IEEE 754 16-bit floating format is assumed to have an implicit lead bit with value 1 unless the exponent field is stored with all zeros; hence, although there are only 10 bits of significand, there are 11 bits of significand precision), which was not designed for deep learning.
+By way of background information, the Bfloat16 floating-point format for DL is an encoding format, which occupies 16 bits and represents a floating-point number. It is of the format [1:8:7], which has one sign bit, eight exponent bits, and seven mantissa bits plus one implicit mantissa bit. This differs from the IEEE Standard for Floating-Point Arithmetic (IEEE 754) 16-bit floating point (the IEEE 754 16-bit floating point format is assumed to have an implicit lead bit with value 1 unless the exponent field is stored with all zeros; hence, although there are only 10 bits of significand, there are 11 bits of significand precision), which was not designed for deep learning.
 
 ## Cloud Platform Instance ##
 
-For the involved cloud instance, various drivers, toolkits, and runtime are needed for the envisioned environment. This might include, by way of example, the following: (1) NVIDIA driver, (2) CUDA toolkit, and (3) CUDA runtime.
+For the involved cloud instance, various drivers, toolkits, and runtime are needed for the envisioned environment. This might include, by way of example, the following: (1) NVIDIA driver, (2) Compute Unified Device Architecture (CUDA) toolkit, and (3) CUDA runtime.
 
 *Source:https://cloud.google.com/compute/docs/gpus/install-drivers-gpu*
 
@@ -30,14 +30,15 @@ Depending on the GPU type,
 
 
 
+## Graphics Processing Unit Programming Framework ##
 
-OpenCL and CUDA are both Graphics Processing Unit (GPU) programming frameworks, which leverage the use of GPUs. OpenCL is an open standard maintained by the Khronos Group consortium, whose members are listed here: https://www.khronos.org/members/list. CUDA is proprietary to NVIDIA.
+CUDA and OpenCL are both Graphics Processing Unit (GPU) programming frameworks, which leverage the use of GPUs. Whereas CUDA is proprietary to NVIDIA, OpenCL is an open standard maintained by the Khronos Group consortium, whose members are listed here: https://www.khronos.org/members/list. 
 
-The CUDA SDK v11.0 – v11.2 supports the Brain floating-point 16 bit (Bfloat16) format.
+The CUDA Software Development Kit (SDK) v11.0 – v11.2 supports the Bfloat16 data type. A principal benefit of Bfloat16 is to reduce the storage requirements and increase the computational speed of DL algorithms. NVIDIA GPU-Accelerated Server Platforms running CUDA SDK v11.0+, whether on-prem or in the cloud, can leverage Bfloat16; Bfloat16 is an excellent alternative to the IEEE 754 16-bit floating point format (FP16), for although it has reduced precision, it has the numerical range of FP32.
 
 
 
-A principal benefit of Bfloat16 is to reduce the storage requirements and increase the computational speed of deep learning algorithms.
+
 
 
 
