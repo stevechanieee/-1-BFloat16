@@ -40,9 +40,9 @@ julia> [CUDA.capability(dev) for dev in CUDA.devices()]
  v"8.6"
 ```
 
-The most recent version of CUDA.jl also required a compute capability version of 5.0 (or higher).
+The most recent version of CUDA.jl requires a CUDA compute capability version of 5.0 (or higher).
 
-An interim summary of the compute capability versions (ranging from 1.0 through 8.6) are shown in Table 1 below:
+An interim summary of the CUDA compute capability versions (ranging from 1.0 through 8.6) are shown in Table 1 below:
 
 **Table 1: CUDA Compute Capability and Microarchitecture Information**
 <table>
