@@ -297,7 +297,7 @@ Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/
 <br/>
 <br/>
 
-With regards to dependencies, please note the deprecations at v11:
+With regards to dependencies, please note the deprecations at CUDA v11:
 
 1. cusparse<t>gemmi()
 2. cusparseXaxpyi -> cusparseAxpby() 
