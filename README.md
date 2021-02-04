@@ -6,7 +6,7 @@ A key advantage of utilizing a cloud platform is that the requisite hardware res
 
 According to Juliagpu.org (https://juliagpu.org), "the best supported GPU platform in Julia is NVIDIA CUDA."
 
-# CUDA Progamming in Julia (CUDA.jl) #
+## CUDA Progamming in Julia (CUDA.jl) ##
 
 The Julia version release history is available here:
 https://github.com/JuliaLang/julia/releases
