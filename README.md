@@ -8,7 +8,7 @@ A key advantage of utilizing a cloud platform is that the requisite hardware res
 
 ## Advantage of Cloud Native Artificial Intelligence ##
 
-As the cloud environment is available from anywhere with an Internet connection, it fosters greater accessibility and collaboration. In addition, among other advantages, cloud environments are scalable to support greater volumes of data and a potentially faster computing environment for processing that data (i.e. cloud storage and computing). In essence, the cloud offers an elastic computing environment. This is of great interest to Artificial Intelligence (AI) implementers, as the "cloud environment's contributions to AI's ascendancy go beyond just data," particularly for the two most common applications of AI: (1) machine learning (ML), and Deep Learning (DL).
+As the cloud environment is available from anywhere with an Internet connection, it fosters greater accessibility and collaboration. In addition, among other advantages, cloud environments are scalable to support greater volumes of data and a potentially faster computing environment for processing the voluminous data (i.e. cloud storage and computing). In essence, the cloud offers an elastic computing environment. This is of great interest to Artificial Intelligence (AI) implementers, as the "cloud environment's contributions to AI's ascendancy go beyond just data," particularly for the two most common applications of AI: (1) machine learning (ML), and Deep Learning (DL).
 
 *Source: https://www.ironmountain.com/resources/general-articles/c/cloud-computing-and-ai-have-combined-to-fuel-each-other-s-stunning-growth*
 
