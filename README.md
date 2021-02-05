@@ -375,7 +375,7 @@ Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/
 
 With regards to dependencies, please note the deprecations at CUDA v11:
 
-1. cusparse<t>gemmi()<br/>
+1. cusparse<t>gemmi(); this function performs the following matrix-matrix operations:<br/>
 2. cusparseXaxpyi -> cusparseAxpby() <br/>
 3. cusparseXgthr -> cusparseGather()<br/>
 4. cusparseXgthrz -> cusparseGather()<br/>
