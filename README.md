@@ -26,13 +26,17 @@ For the involved cloud instance, various drivers, toolkits, and runtime are need
 
 *Source:https://cloud.google.com/compute/docs/gpus/install-drivers-gpu*
 
-Depending on the GPU type,
-
-
-
 ## Graphics Processing Unit Programming Framework ##
 
 CUDA and OpenCL are both Graphics Processing Unit (GPU) programming frameworks, which leverage the use of GPUs. Whereas CUDA is proprietary to NVIDIA, OpenCL is an open standard maintained by the Khronos Group consortium, whose members are listed here: https://www.khronos.org/members/list. 
+
+Depending on the GPU type, there are particular NVIDIA driver versions required as well as minimum recommended CUDA Toolkit versions, such as shown in Table 1 below.
+
+### Table 1 ###
+| GPU Type    | GPU Description | NVIDIA Driver Version | NVIDIA Driver Version Release Date | Minimum Recommended CUDA Software Development Kit/Toolkit version |
+|-------------|-----------------|-----------------------|------------------------------------|------------------------------------------|
+| NVIDIA A100 | Tensor Core GPU | Linux: 450.80.02      | 9/30/20                            | Linux: CUDA Toolkit 11.1                 |
+| NVIDIA T4   | Tensor Core GPU | Linux: 410.79         | 12/3/18                            | Linux: CUDA Toolkit 10.1 update2         |
 
 The CUDA Software Development Kit (SDK) v11.0 – v11.2 supports the Bfloat16 data type. A principal benefit of Bfloat16 is to reduce the storage requirements and increase the computational speed of DL algorithms. NVIDIA GPU-Accelerated Server Platforms running CUDA SDK v11.0+, whether on-prem or in the cloud, can leverage Bfloat16; Bfloat16 is an excellent alternative to the IEEE 754 16-bit floating point format (FP16), for although it has reduced precision, it has the numerical range of FP32.
 
