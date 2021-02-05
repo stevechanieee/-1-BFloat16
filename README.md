@@ -64,6 +64,10 @@ According to JuliaGPU.org (https://juliagpu.org), "the best supported GPU platfo
 The Julia version release history is available here:
 https://github.com/JuliaLang/julia/releases
 
+**Table 2: Julia Release Version Information**
+
+
+
 The most recent version is Julia v1.6.0.
 
 The most recent version of CUDA.jl requires Julia v1.6.0 (or higher).
@@ -95,9 +99,9 @@ julia> [CUDA.capability(dev) for dev in CUDA.devices()]
 
 The most recent version of CUDA.jl requires a CUDA compute capability version of 5.0 (or higher).
 
-An interim summary of the CUDA compute capability versions (ranging from 1.0 through 8.6) are shown in Table 2 below:
+An interim summary of the CUDA compute capability versions (ranging from 1.0 through 8.6) are shown in Table 3 below:
 
-**Table 2: CUDA Compute Capability and Microarchitecture Information**
+**Table 3: CUDA Compute Capability and Microarchitecture Information**
 <table>
 <thead class="thead" align="left">
 <tr class="row">
