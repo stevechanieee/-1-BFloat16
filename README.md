@@ -477,7 +477,7 @@ An interim summary of the CUDA toolkit versions (ranging from 1.0 through 11.2.0
 <tr><td>1.1</td><td>Dec 2007</td></tr>
 <tr><td>1.0</td><td>June 2007</td></tr>
 </table>
-*Source: https://developer.nvidia.com/cuda-toolkit-archive*
+*Source: https://developer.nvidia.com/cuda-toolkit-archive*<br/>
 *Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/*
 
 
