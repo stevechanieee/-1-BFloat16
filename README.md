@@ -74,7 +74,7 @@ For convenience, Julia version information is provided in Table 2 below.
 
 **Table 2: Julia Release Version Information**
 
-| Julia Version Number | Release Date |
+| Julia Release Version Number | Release Date |
 |----------------------|--------------|
 | v1.4.1               | 4/14/20      |
 | v1.4.2               | 5/23/20      |
