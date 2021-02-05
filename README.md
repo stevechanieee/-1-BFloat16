@@ -19,6 +19,8 @@ Typically, cloud platform providers natively support a variety of ML and DL fram
 Amazon Web Services (AWS) debuted AWS Trainium (a custom processor for machine learning model training in the cloud) on 1 December 2020. In 2017, Google announced their Tensor Processing Unit (TPU) (a custom processor for machine learning), and these were made available a year later in the cloud; on 29 July 2020, Google debuted its fourth-generation TPUs. Overall, the custom processors of the various cloud platform providers are considered to be AI accelerator Application-Specific Integrated Circuits (ASICs). 
 
 *Source:https://aws.amazon.com/ec2/graviton/*
+*Source:https://venturebeat.com/2020/07/29/google-claims-its-new-tpus-are-2-7-times-faster-than-the-previous-generation/*
+*Source:https://medium.com/sciforce/understanding-tensor-processing-units-10ff41f50e78*
 
 ## Custom Processors in the Cloud ##
 
