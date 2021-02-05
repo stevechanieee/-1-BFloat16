@@ -59,7 +59,7 @@ JuliaMath (i.e., mathematics made easy in Julia) defines the BFloat16 data type.
 
 *Source:https://github.com/JuliaMath/BFloat16s.jl*
 
-JuliaGPU "is a Github organization created to unify the many packages for programming GPUs in Julia." JuliaGPU is described as a "high-performance GPU programming in a high-level language."
+JuliaGPU "is a Github organization created to unify the many packages for programming GPUs in Julia." JuliaGPU is also described as a "high-performance GPU programming in a high-level language."
 
 *Source: https://juliagpu.org*
 
@@ -70,11 +70,24 @@ According to JuliaGPU.org (https://juliagpu.org), "the best supported GPU platfo
 The Julia version release history is available here:
 https://github.com/JuliaLang/julia/releases
 
+For convenience, Julia version information is provided in Table 2 below.
+
 **Table 2: Julia Release Version Information**
 
+| Julia Version Number | Release Date |
+|----------------------|--------------|
+| v1.4.1               | 4/14/20      |
+| v1.4.2               | 5/23/20      |
+| v1.5.0-beta1         | 5/28/20      |
+| v1.5.0-rc1           | 6/26/20      |
+| v1.5.0-rc2           | 7/27/20      |
+| v1.5.0               | 8/1/20       |
+| v1.5.1               | 8/25/20      |
+| v1.5.2               | 9/24/20      |
+| v1.5.3               | 11/9/20      |
+| v1.6.0-beta          | 1/8/21       |
 
-
-The most recent version is Julia v1.6.0.
+As can be seen, the most current version is Julia v1.6.0.
 
 The most recent version of CUDA.jl requires Julia v1.6.0 (or higher).
 
