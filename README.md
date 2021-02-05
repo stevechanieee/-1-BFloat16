@@ -185,9 +185,9 @@ An interim summary of the CUDA compute capability versions (ranging from 1.0 thr
 </table>
 
  
-An interim summary of the version information for the various components, as the constituent components in the toolkit are versioned independently as of CUDA v11, are shown in Table 2 below:
+An interim summary of the version information for the various components, as the constituent components in the toolkit are versioned independently as of CUDA v11, are shown in Table 4 below:
 
-**Table 2: CUDA 11 Component Version Information**
+**Table 4: CUDA 11 Component Version Information**
 <table>
 <thead class="thead" align="left">
 <tr class="row">
@@ -397,9 +397,9 @@ https://docs.nvidia.com/cuda-libraries/index.html
 
 Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/
 
-An interim summary of the toolkit versions (ranging from 1.0 through 11.2.0) are shown in Table 3 below:
+An interim summary of the toolkit versions (ranging from 1.0 through 11.2.0) are shown in Table 5 below:
 
-**Table 3: CUDA Toolkit Version Information**
+**Table 5: CUDA Toolkit Version Information**
 <table>
 <tr><td>Toolkit Version Number</td><td>Release Date</td></tr>
 <tr><td>11.2.0</td><td>Dec 2020</td></tr>
