@@ -384,12 +384,6 @@ With regards to dependencies, please note the deprecations at CUDA v11:
 	
 For the functions involved, for (1) through (6) above, please search for "This function performs the following matrix-matrix operations" or the replacement function (as shown above) on this page: https://docs.nvidia.com/cuda/cusparse/index.html.
 
-
-
-
-
-
-
 Overall, the dropped features include: 
 * cusparse<t>gemmi()<br/>
 * cusparseXaxpyi, cusparseXgthr, cusparseXgthrz, cusparseXroti, cusparseXsctr<br/>
@@ -415,7 +409,6 @@ The cusparse (a.k.a. cuSPARSE) library contains basic linear algebra subroutines
 *Source:https://docs.nvidia.com/cuda/cusparse/index.html*
 
 The cuSPARSE library subroutines can be classified into four categories:
-
 Level 1: operations between a vector in sparse format and a vector in dense format;<br/>
 Level 2: operations between a matrix in sparse format and a vector in dense format;<br/>
 Level 3: operations between a matrix in sparse format and a set of vectors in dense format (which can also usually be viewed as a dense tall matrix);<br/>
@@ -425,16 +418,14 @@ Conversion: operations that allow conversion between different matrix formats, a
 
 In numerical analysis and scientific computing, a sparse matrix (a.k.a. sparse array) is a matrix, wherein most of the elements are zero. There is no strict definition for many elements need to be zero for a matrix to be considered sparse. However, some of the more universally acknowledged criterion include, "the number of non-zero elements is roughly the number of rows or columns." In contrast, if the majority of the elements are non-zero, then the matrix is considered dense. The sparsity of the matrix = count for the zero elements / count for the total elements.
 
-Efficient Structures for Constructing Sparse Matrices
+The following are exemplars of efficient structures for constructing sparse matrices:
 * Dictionary of keys (DOK)-based sparse matrix: the array is represented as a dictionary that maps pairs (row, column) to the value of the elements.
 * List of Lists (LIL)-based sparse matrix: the array is represented as a list of rows, and each row is represented as list of pairs (index position, value).
 * Coordinate list (COO)-based sparse matrix: the array is represented as a list of tuples (row, column, value).
+* Compressed Sparse Column (CSC) or Compressed Column Storage (CCS) (a.k.a. Harwell-Boeing sparse matrix format): specified by the arrays {val, row_ind, col_ptr}, where val stores the nonzero elements of the matrix (i.e., the floating-point numbers), row_ind stores the row indices of each nonzero element, and col_ptr stores the index of the elements in val which start a column of matrix A.
+* Compressed Sparse Row (CSR) or Compressed Row Storage (CRS)(a.k.a. Yale sparse matrix format): specified by the arrays {val, col_ind, row_ptr}, where val stores the nonzero elements of the matrix (i.e., the floating-point numbers), col_ind stores the column indices of each nonzero element, and row_ptr stores the index of the elements in val which start a column of matrix A.
 
-
-efficient access and matrix operations,
-such as CSR (Compressed Sparse Row) or CSC (Compressed Sparse Column).
-
-Specialized computers have been made for sparse matrices,[1] as they are common in the machine learning field.[2] Operations using standard dense-matrix structures and algorithms are slow and inefficient when applied to large sparse matrices as processing and memory are wasted on the zeros. Sparse data is by nature more easily compressed and thus requires significantly less storage. Some very large sparse matrices are infeasible to manipulate using standard dense-matrix algorithms.
+It should be axiomatic that operations involving standard dense matrix structures expend processing and storage on the zeros. Sparse matrix structures are more easily compressed and, therefore, require significantly processing and storage. 
 
 What data types are you using? float, double, cuComplex, and cuDoubleComplex.
 
