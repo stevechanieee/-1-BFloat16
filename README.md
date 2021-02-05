@@ -26,7 +26,7 @@ On 1 December 2020, Amazon Web Services (AWS) debuted AWS Trainium (a custom pro
 
 As previously discussed, to facilitate ML workloads (typically computationally intensive processes that might run for hours/days), Google's TPUs support a custom floating point format/data type entitled Brain Floating Point Format (BFloat16). BFloat 16 is designed to accelerate matrix multiplication operations.
 
-By way of background information, the Bfloat16 floating-point format for DL is an encoding format, which occupies 16 bits and represents a floating-point number. It is of the format [1:8:7], which has one sign bit, eight exponent bits, and seven mantissa bits (e.g., fraction field) plus one implicit mantissa bit. This differs from the IEEE Standard for Floating-Point Arithmetic (IEEE 754) 16-bit floating point format (the IEEE 754 16-bit floating point format is assumed to have an implicit lead bit with value 1 unless the exponent field is stored with all zeros; hence, although there are only 10 bits of significand, there are 11 bits of significand precision), which was not designed for DL. The floating-point format is comprised of three binary fields: +/- mantissa * 2^exponent (i.e., the sign bit field of +/-, the exponent field of ^exponent, and the fraction field of mantissa).
+By way of background information, the Bfloat16 floating-point format for DL is an encoding format, which occupies 16 bits and represents a floating-point number. It is of the format [1:8:7], which has one sign bit, eight exponent bits, and seven mantissa bits (e.g., fraction field) plus one implicit mantissa bit. This differs from the IEEE Standard for Floating Point Arithmetic (IEEE 754) 16-bit floating point format (the IEEE 754 16-bit floating point format is assumed to have an implicit lead bit with value 1 unless the exponent field is stored with all zeros; hence, although there are only 10 bits of significand, there are 11 bits of significand precision), which was not designed for DL. The floating-point format is comprised of three binary fields: +/- mantissa * 2^exponent (i.e., the sign bit field of +/-, the exponent field of ^exponent, and the fraction field of mantissa).
 
 ## Cloud Platform Instance ##
 
@@ -36,7 +36,7 @@ For the involved cloud instance (i.e., a virtual machine running a workload in a
 
 ## Graphics Processing Unit Programming Framework ##
 
-CUDA and OpenCL are both Graphics Processing Unit (GPU) programming frameworks, which leverage the use of GPUs. Whereas CUDA is proprietary to NVIDIA, OpenCL is an open standard maintained by the Khronos Group consortium, whose members are listed here: https://www.khronos.org/members/list. 
+CUDA and OpenCL are both Graphics Processing Unit (GPU) programming frameworks, which leverage the use of GPUs and their custom processors. Whereas CUDA is proprietary to NVIDIA, OpenCL is an open standard maintained by the Khronos Group consortium, whose members are listed here: https://www.khronos.org/members/list. 
 
 Depending on the GPU type, there are particular NVIDIA driver versions required as well as minimum recommended CUDA Toolkit versions, such as shown in Table 1 below.
 
@@ -49,7 +49,7 @@ Depending on the GPU type, there are particular NVIDIA driver versions required 
 
 *Source:https://cloud.google.com/compute/docs/gpus/install-drivers-gpu*
 
-The CUDA Software Development Kit (SDK) v11.0 – v11.2 supports the Bfloat16 data type. A principal benefit of Bfloat16 is to reduce the storage requirements and increase the computational speed of DL algorithms. NVIDIA GPU-Accelerated Server Platforms running CUDA SDK v11.0+, whether on-premise (a.k.a. on-prem) or in the cloud, can leverage Bfloat16; Bfloat16 is an excellent alternative to the IEEE 754 16-bit floating point format (FP16), for although it has reduced precision, it has the numerical range of FP32.
+The CUDA Software Development Kit (SDK) v11.0 – v11.2 supports the delineated Bfloat16 data type. A principal benefit of Bfloat16 is to reduce the storage requirements and increase the computational speed of DL algorithms. NVIDIA GPU-Accelerated Server Platforms, running CUDA SDK v11.0+, whether on-premise (a.k.a. on-prem) or in the cloud, can leverage Bfloat16; Bfloat16 is an excellent alternative to the IEEE 754 16-bit Floating Point (FP16) format, for although it has reduced precision, it has the numerical range of FP32.
 
 ## Julia ##
 
