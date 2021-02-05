@@ -365,9 +365,11 @@ With regards to dependencies, please note the deprecations at CUDA v11:
 
 
 
-The cuSPARSE library contains a set of basic linear algebra subroutines used for handling sparse matrices. The library targets matrices with a number of (structural) zero elements which represent > 95% of the total entries.
+The cusparse (a.k.a. cuSPARSE) library contains basic linear algebra subroutines (i.e., a set of instructions designed to perform a frequently utilized operation), which are geared for handling sparse matrices, particularly those whose number of zero elements represent > 95% of the total entries.
 
-The library routines can be classified into four categories:
+*Source:https://docs.nvidia.com/cuda/cusparse/index.html*
+
+The cuSPARSE library subroutines can be classified into four categories:
 
 Level 1: operations between a vector in sparse format and a vector in dense format
 Level 2: operations between a matrix in sparse format and a vector in dense format
