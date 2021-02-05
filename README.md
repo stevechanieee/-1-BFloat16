@@ -375,12 +375,40 @@ Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/
 
 With regards to dependencies, please note the deprecations at CUDA v11:
 
-1. cusparse<t>gemmi(); this function performs the following matrix-matrix operations:<br/>
+1. cusparse<t>gemmi() <br/>
 2. cusparseXaxpyi -> cusparseAxpby() <br/>
 3. cusparseXgthr -> cusparseGather()<br/>
 4. cusparseXgthrz -> cusparseGather()<br/>
 5. cusparseXroti -> cusparseRot()<br/>
 6. cusparseXsctr -> cusparseScatter()<br/>
+	
+For the functions involved, for (1) through (6) above, please search for "This function performs the following matrix-matrix operations" or the replacement function (as shown above) on this page: https://docs.nvidia.com/cuda/cusparse/index.html.
+
+
+
+
+
+
+
+Overall, the dropped features include: 
+* cusparse<t>gemmi()<br/>
+* cusparseXaxpyi, cusparseXgthr, cusparseXgthrz, cusparseXroti, cusparseXsctr<br/>
+* Hybrid format enums and helper functions: cusparseHybPartition_t, cusparseHybPartition_t, cusparseCreateHybMat, cusparseDestroyHybMat<br/>
+* Triangular solver enums and helper functions: cusparseSolveAnalysisInfo_t, cusparseCreateSolveAnalysisInfo, cusparseDestroySolveAnalysisInfo<br/>
+* Sparse dot product: cusparseXdoti, cusparseXdotci<br/>
+* Sparse matrix-vector multiplication: cusparseXcsrmv, cusparseXcsrmv_mp<br/>
+* Sparse matrix-matrix multiplication: cusparseXcsrmm, cusparseXcsrmm2<br/>
+* Sparse triangular-single vector solver: cusparseXcsrsv_analysis, cusparseCsrsv_analysisEx, cusparseXcsrsv_solve, cusparseCsrsv_solveEx<br/>
+* Sparse triangular-multiple vectors solver: cusparseXcsrsm_analysis, cusparseXcsrsm_solve<br/>
+* Sparse hybrid format solver: cusparseXhybsv_analysis, cusparseShybsv_solve<br/>
+* Extra functions: cusparseXcsrgeamNnz, cusparseScsrgeam, cusparseXcsrgemmNnz, cusparseXcsrgemm<br/>
+* Incomplete Cholesky Factorization, level 0: cusparseXcsric0<br/>
+* Incomplete LU Factorization, level 0: cusparseXcsrilu0, cusparseCsrilu0Ex<br/>
+* Tridiagonal Solver: cusparseXgtsv, cusparseXgtsv_nopivot<br/>
+* Batched Tridiagonal Solver: cusparseXgtsvStridedBatch<br/>
+* Reordering: cusparseXcsc2hyb, cusparseXcsr2hyb, cusparseXdense2hyb, cusparseXhyb2csc, cusparseXhyb2csr, cusparseXhyb2dense<br/>
+
+*Source:https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/#deprecated-features*
 
 The cusparse (a.k.a. cuSPARSE) library contains basic linear algebra subroutines (i.e., a set of instructions designed to perform a frequently utilized operation), which are geared for handling sparse matrices, particularly those whose number of zero elements represent > 95% of the total entries.
 
@@ -395,15 +423,16 @@ Conversion: operations that allow conversion between different matrix formats, a
 
 *Source:https://docs.nvidia.com/cuda/cusparse/index.html*
 
-In numerical analysis and scientific computing, a sparse matrix (a.k.a. sparse array) is a matrix, wherein most of the elements are zero. There is no strict definition for many elements need to be zero for a matrix to be considered sparse. However, some of the more universally acknowledged criterion include, "the number of non-zero elements is roughly the number of rows or columns." In contrast, if the majority of the elements are non-zero, then the matrix is considered dense. The sparsity of the matrix = count zero elements / total elements.
+In numerical analysis and scientific computing, a sparse matrix (a.k.a. sparse array) is a matrix, wherein most of the elements are zero. There is no strict definition for many elements need to be zero for a matrix to be considered sparse. However, some of the more universally acknowledged criterion include, "the number of non-zero elements is roughly the number of rows or columns." In contrast, if the majority of the elements are non-zero, then the matrix is considered dense. The sparsity of the matrix = count for the zero elements / count for the total elements.
+
+Efficient Structures for Constructing Sparse Matrices
+* Dictionary of keys (DOK)-based sparse matrix: the array is represented as a dictionary that maps pairs (row, column) to the value of the elements.
+* List of Lists (LIL)-based sparse matrix: the array is represented as a list of rows, and each row is represented as list of pairs (index position, value).
+* Coordinate list (COO)-based sparse matrix: the array is represented as a list of tuples (row, column, value).
 
 
-
-
-
-
-Those that support efficient modification, such as DOK (Dictionary of keys), LIL (List of lists), or COO (Coordinate list). These are typically used to construct the matrices.
-Those that support efficient access and matrix operations, such as CSR (Compressed Sparse Row) or CSC (Compressed Sparse Column).
+efficient access and matrix operations,
+such as CSR (Compressed Sparse Row) or CSC (Compressed Sparse Column).
 
 Specialized computers have been made for sparse matrices,[1] as they are common in the machine learning field.[2] Operations using standard dense-matrix structures and algorithms are slow and inefficient when applied to large sparse matrices as processing and memory are wasted on the zeros. Sparse data is by nature more easily compressed and thus requires significantly less storage. Some very large sparse matrices are infeasible to manipulate using standard dense-matrix algorithms.
 
