@@ -40,18 +40,19 @@ Depending on the GPU type, there are particular NVIDIA driver versions required 
 
 The CUDA Software Development Kit (SDK) v11.0 – v11.2 supports the Bfloat16 data type. A principal benefit of Bfloat16 is to reduce the storage requirements and increase the computational speed of DL algorithms. NVIDIA GPU-Accelerated Server Platforms running CUDA SDK v11.0+, whether on-prem or in the cloud, can leverage Bfloat16; Bfloat16 is an excellent alternative to the IEEE 754 16-bit floating point format (FP16), for although it has reduced precision, it has the numerical range of FP32.
 
-
-
-
-
-
-
-
-
-
 ## Julia ##
 
-According to Juliagpu.org (https://juliagpu.org), "the best supported GPU platform in Julia is NVIDIA CUDA."
+Julia is a high-level, high-performance programming language, which was designed for numerical analysis and computational science.
+
+JuliaMath (i.e., mathematics made easy in Julia) defines the BFloat16 data type. 
+
+*Source:https://github.com/JuliaMath/BFloat16s.jl*
+
+JuliaGPU "is a Github organization created to unify the many packages for programming GPUs in Julia." JuliaGPU is described as a "high-performance GPU programming in a high-level language."
+
+*Source: https://juliagpu.org*
+
+According to JuliaGPU.org (https://juliagpu.org), "the best supported GPU platform in Julia is NVIDIA CUDA."
 
 ## CUDA Progamming in Julia (CUDA.jl) ##
 
