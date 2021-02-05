@@ -375,14 +375,12 @@ Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/
 
 With regards to dependencies, please note the deprecations at CUDA v11:
 
-1. cusparse<t>gemmi()
-2. cusparseXaxpyi -> cusparseAxpby() 
-3. cusparseXgthr -> cusparseGather()
-4. cusparseXgthrz -> cusparseGather()
-5. cusparseXroti -> cusparseRot()
-6. cusparseXsctr -> cusparseScatter()
-
-
+1. cusparse<t>gemmi()<br/>
+2. cusparseXaxpyi -> cusparseAxpby() <br/>
+3. cusparseXgthr -> cusparseGather()<br/>
+4. cusparseXgthrz -> cusparseGather()<br/>
+5. cusparseXroti -> cusparseRot()<br/>
+6. cusparseXsctr -> cusparseScatter()<br/>
 
 The cusparse (a.k.a. cuSPARSE) library contains basic linear algebra subroutines (i.e., a set of instructions designed to perform a frequently utilized operation), which are geared for handling sparse matrices, particularly those whose number of zero elements represent > 95% of the total entries.
 
@@ -390,13 +388,19 @@ The cusparse (a.k.a. cuSPARSE) library contains basic linear algebra subroutines
 
 The cuSPARSE library subroutines can be classified into four categories:
 
-Level 1: operations between a vector in sparse format and a vector in dense format
-Level 2: operations between a matrix in sparse format and a vector in dense format
-Level 3: operations between a matrix in sparse format and a set of vectors in dense format (which can also usually be viewed as a dense tall matrix)
-Conversion: operations that allow conversion between different matrix formats, and compression of csr matrices.
+Level 1: operations between a vector in sparse format and a vector in dense format;<br/>
+Level 2: operations between a matrix in sparse format and a vector in dense format;<br/>
+Level 3: operations between a matrix in sparse format and a set of vectors in dense format (which can also usually be viewed as a dense tall matrix);<br/>
+Conversion: operations that allow conversion between different matrix formats, and compression of csr matrices.<br/>
+
+*Source:https://docs.nvidia.com/cuda/cusparse/index.html*
+
+In numerical analysis and scientific computing, a sparse matrix (a.k.a. sparse array) is a matrix, wherein most of the elements are zero. There is no strict definition for many elements need to be zero for a matrix to be considered sparse. However, some of the more universally acknowledged criterion include, "the number of non-zero elements is roughly the number of rows or columns." In contrast, if the majority of the elements are non-zero, then the matrix is considered dense. The sparsity of the matrix = count zero elements / total elements.
 
 
-In numerical analysis and scientific computing, a sparse matrix or sparse array is a matrix in which most of the elements are zero. There is no strict definition how many elements need to be zero for a matrix to be considered sparse but a common criterion is that the number of non-zero elements is roughly the number of rows or columns. By contrast, if most of the elements are nonzero, then the matrix is considered dense. The number of zero-valued elements divided by the total number of elements (e.g., m × n for an m × n matrix) is sometimes referred to as the sparsity of the matrix.
+
+
+
 
 Those that support efficient modification, such as DOK (Dictionary of keys), LIL (List of lists), or COO (Coordinate list). These are typically used to construct the matrices.
 Those that support efficient access and matrix operations, such as CSR (Compressed Sparse Row) or CSC (Compressed Sparse Column).
@@ -415,6 +419,15 @@ We wanted to create a solution that is able to run anywhere (super important for
 Basic Linear Algebra for Sparse Matrices on NVIDIA GPUs
 https://docs.nvidia.com/cuda-libraries/index.html
 	
+
+
+
+
+
+
+
+
+
 
 Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/
 
