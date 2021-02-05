@@ -12,7 +12,13 @@ As the cloud environment is available from anywhere with an Internet connection,
 
 *Source: https://www.ironmountain.com/resources/general-articles/c/cloud-computing-and-ai-have-combined-to-fuel-each-other-s-stunning-growth*
 
-Typically, cloud platform providers natively support a variety of ML and DL frameworks as well as specific data types, via custom processors.
+Typically, cloud platform providers natively support a variety of ML and DL frameworks as well as specific data types, via custom processors. For example, Amazon, Google and other cloud providers have been building custom processors for years to improve the performance of their hyper-scale data center servers.
+
+*Source:https://www.spglobal.com/marketintelligence/en/news-insights/latest-news-headlines/microsoft-designs-data-center-chip-to-compete-with-amazon-intel-8211-report-61823358*
+
+Amazon Web Services (AWS) debuted AWS Trainium (a custom processor for machine learning model training in the cloud) on 1 December 2020. In 2017, Google announced their Tensor Processing Unit (TPU) (a custom processor for machine learning), and these were made available a year later in the cloud; on 29 July 2020, Google debuted its fourth-generation TPUs. Overall, the custom processors of the various cloud platform providers are considered to be AI accelerator Application-Specific Integrated Circuits (ASICs). 
+
+*Source:https://aws.amazon.com/ec2/graviton/*
 
 ## Custom Processors in the Cloud ##
 
