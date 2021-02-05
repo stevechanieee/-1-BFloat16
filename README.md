@@ -34,9 +34,9 @@ CUDA and OpenCL are both Graphics Processing Unit (GPU) programming frameworks, 
 
 Depending on the GPU type, there are particular NVIDIA driver versions required as well as minimum recommended CUDA Toolkit versions, such as shown in Table 1 below.
 
-### Table 1 ###
+### Table 1: GPU Type, Required NVIDIA Driver Version, and Minimum Recommended CUDA Toolkit Version ###
 
-| GPU Type    | GPU Description | NVIDIA Driver Version | NVIDIA Driver Version Release Date | Minimum Recommended CUDA Software Development Kit/Toolkit version |
+| GPU Type    | GPU Description | Required NVIDIA Driver Version | NVIDIA Driver Version Release Date | Minimum Recommended CUDA Software Development Kit/Toolkit Version |
 |-------------|-----------------|-----------------------|------------------------------------|------------------------------------------|
 | NVIDIA A100 | Tensor Core GPU | Linux: 450.80.02      | 9/30/20                            | Linux: CUDA Toolkit 11.1                 |
 | NVIDIA T4   | Tensor Core GPU | Linux: 410.79         | 12/3/18                            | Linux: CUDA Toolkit 10.1 update2         |
