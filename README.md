@@ -34,7 +34,7 @@ CUDA and OpenCL are both Graphics Processing Unit (GPU) programming frameworks, 
 
 Depending on the GPU type, there are particular NVIDIA driver versions required as well as minimum recommended CUDA Toolkit versions, such as shown in Table 1 below.
 
-### Table 1: GPU Type, Required NVIDIA Driver Version, and Minimum Recommended CUDA Toolkit Version ###
+**Table 1: GPU Type, Required NVIDIA Driver Version, and Minimum Recommended CUDA Toolkit Version**
 
 | GPU Type    | GPU Description | Required NVIDIA Driver Version | NVIDIA Driver Version Release Date | Minimum Recommended CUDA Software Development Kit/Toolkit Version |
 |-------------|-----------------|-----------------------|------------------------------------|------------------------------------------|
@@ -95,9 +95,9 @@ julia> [CUDA.capability(dev) for dev in CUDA.devices()]
 
 The most recent version of CUDA.jl requires a CUDA compute capability version of 5.0 (or higher).
 
-An interim summary of the CUDA compute capability versions (ranging from 1.0 through 8.6) are shown in Table 1 below:
+An interim summary of the CUDA compute capability versions (ranging from 1.0 through 8.6) are shown in Table 2 below:
 
-**Table 1: CUDA Compute Capability and Microarchitecture Information**
+**Table 2: CUDA Compute Capability and Microarchitecture Information**
 <table>
 <thead class="thead" align="left">
 <tr class="row">
