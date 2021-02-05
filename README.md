@@ -18,7 +18,9 @@ Typically, cloud platform providers natively support a variety of ML and DL fram
 
 As just one example, to facilitate ML workloads (typically computationally intensive processes that might run for hours/days), Google developed custom processors entitled Tensor Processing Units (TPUs). These TPUs support a custom floating point format/data type entitled Brain Floating Point Format (BFloat16). BFloat 16 is designed to accelerate matrix multiplication operations.
 
-By way of background information, the Bfloat16 floating-point format for DL is an encoding format, which occupies 16 bits and represents a floating-point number. It is of the format [1:8:7], which has one sign bit, eight exponent bits, and seven mantissa bits plus one implicit mantissa bit. This differs from the IEEE Standard for Floating-Point Arithmetic (IEEE 754) 16-bit floating point (the IEEE 754 16-bit floating point format is assumed to have an implicit lead bit with value 1 unless the exponent field is stored with all zeros; hence, although there are only 10 bits of significand, there are 11 bits of significand precision), which was not designed for deep learning.
+By way of background information, the Bfloat16 floating-point format for DL is an encoding format, which occupies 16 bits and represents a floating-point number. It is of the format [1:8:7], which has one sign bit, eight exponent bits, and seven mantissa bits (e.g., fraction field) plus one implicit mantissa bit. This differs from the IEEE Standard for Floating-Point Arithmetic (IEEE 754) 16-bit floating point (the IEEE 754 16-bit floating point format is assumed to have an implicit lead bit with value 1 unless the exponent field is stored with all zeros; hence, although there are only 10 bits of significand, there are 11 bits of significand precision), which was not designed for DL.
+
+In essence, the floating-point format is comprised of three binary fields: +/- mantissa * 2^exponent (i.e., the sign bit field of +/-, the exponent field of ^exponent, and the fraction field of mantissa).
 
 ## Cloud Platform Instance ##
 
