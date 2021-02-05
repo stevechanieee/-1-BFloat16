@@ -427,31 +427,17 @@ The following are exemplars of efficient structures for constructing sparse matr
 
 It should be axiomatic that operations involving standard dense matrix structures expend processing and storage on the zeros. Sparse matrix structures are more easily compressed and, therefore, require significantly processing and storage. 
 
-What data types are you using? float, double, cuComplex, and cuDoubleComplex.
+The utilized data types might include: 
+float: a single precision 32-bit IEEE 754 floating point format. 
+double: a double precision 64-bit IEEE 754 floating point format. 
+decimal: will 100% accurately represent any number, whereas float and double are not able to accurately represent all numbers.
 
+cuComplex: creates a new complex single precision number consisting of the given real and imaginary part. 
+cuDoubleComplex: creates a new complex double precision number consisting of the given real and imaginary part. 
 
-If you’ve built your clusters or have an on-premise setup, it’ll be a bit more work and will result in downtime while you replace your container runtime and start it again by modifying the crictl.yaml file to point to the new container runtime or by allowing kubeadm to autodetect the new runtime and apply the configuration.
+Further CUDA library information can be found here: https://docs.nvidia.com/cuda-libraries/index.html
 
-https://docs.nvidia.com/cuda/cusparse/index.html
-
-We wanted to create a solution that is able to run anywhere (super important for OSS), has excellent performance characteristics and can fit in a multi-container architecture. We decided to implement our rule engine processor in F# , our main service was implemented in C# and other components were built using JavaScript / TypeScript and Go.
-
-Basic Linear Algebra for Sparse Matrices on NVIDIA GPUs
-https://docs.nvidia.com/cuda-libraries/index.html
-	
-
-
-
-
-
-
-
-
-
-
-Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/
-
-An interim summary of the toolkit versions (ranging from 1.0 through 11.2.0) are shown in Table 5 below:
+An interim summary of the CUDA toolkit versions (ranging from 1.0 through 11.2.0) are shown in Table 5 below:
 
 **Table 5: CUDA Toolkit Version Information**
 <table>
@@ -491,8 +477,8 @@ An interim summary of the toolkit versions (ranging from 1.0 through 11.2.0) are
 <tr><td>1.1</td><td>Dec 2007</td></tr>
 <tr><td>1.0</td><td>June 2007</td></tr>
 </table>
-Source: https://developer.nvidia.com/cuda-toolkit-archive
-
+*Source: https://developer.nvidia.com/cuda-toolkit-archive*
+*Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/*
 
 
 
