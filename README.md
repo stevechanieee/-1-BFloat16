@@ -300,9 +300,9 @@ An interim summary of the CUDA toolkit versions (ranging from 1.0 through 11.2.0
 
 ### Interim Findings ###
 
-As of this commit, to utilize the BFloat16 data type:
-CUDA Software Development Kit (SDK) v11.0 (or higher) must be utilized; the most current CUDA SDK is v11.2. 
-The most recent version of CUDA.jl requires Julia v1.6.0 (or higher).
+As of this commit, to utilize the BFloat16 data type:<br/>
+CUDA Software Development Kit (SDK) v11.0 (or higher) must be utilized; the most current CUDA SDK is v11.2.<br/>
+The most recent version of CUDA.jl requires Julia v1.6.0 (or higher).<br/>
 The most recent version of CUDA.jl requires a CUDA compute capability version of 5.0 (or higher); the most current CUDA compute capability is v8.6.
 
 
