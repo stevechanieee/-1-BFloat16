@@ -408,7 +408,7 @@ Overall, the dropped features include:
 
 *Source:https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/#deprecated-features*
 
-The cusparse (a.k.a. cuSPARSE) library contains basic linear algebra subroutines (i.e., a set of instructions designed to perform a frequently utilized operation), which are geared for handling sparse matrices, particularly those whose number of zero elements represent > 95% of the total entries.
+The cusparse (a.k.a. cuSPARSE) library contains basic linear algebra subroutines (i.e., a set of instructions designed to perform a frequently utilized operation), which are geared for handling sparse matrices, particularly those sparse matrices whose number of zero elements represent > 95% of the total entries.
 
 *Source:https://docs.nvidia.com/cuda/cusparse/index.html*
 
