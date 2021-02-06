@@ -386,7 +386,7 @@ With regards to dependencies, please note the deprecations at CUDA v11:
 5. cusparseXroti -> cusparseRot()<br/>
 6. cusparseXsctr -> cusparseScatter()<br/>
 	
-For the functions involved, for (1) through (6) above, please search for "This function performs the following matrix-matrix operations" or the replacement function (as shown above) on this page: https://docs.nvidia.com/cuda/cusparse/index.html.
+For the functions involved, such as for (1) through (6) above, please search for: "This function performs the following matrix-matrix operations" or the replacement functions (as shown above) on this page: https://docs.nvidia.com/cuda/cusparse/index.html.
 
 Overall, the dropped features include: 
 * cusparse<t>gemmi()<br/>
