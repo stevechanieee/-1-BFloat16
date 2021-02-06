@@ -89,7 +89,7 @@ For convenience, Julia version information is provided in Table 2 below.
 | v1.5.1               | 8/25/20      |
 | v1.5.2               | 9/24/20      |
 | v1.5.3               | 11/9/20      |
-| <span style="color:green">v1.6.0-beta</span>          | 1/8/21       |
+| **v1.6.0-beta**          | 1/8/21       |
 
 As can be seen, the most current version is Julia v1.6.0.
 
@@ -125,253 +125,65 @@ The most recent version of CUDA.jl requires a CUDA compute capability version of
 An interim summary of the CUDA compute capability versions (ranging from 1.0 through 8.6) are shown in Table 3 below:
 
 **Table 3: CUDA Compute Capability and Microarchitecture Information**
-<table>
-<thead class="thead" align="left">
-<tr class="row">
-<th class="entry" align="center" valign="top" rowspan="1" colspan="1">Version Number</th>
-<th class="entry" align="center" valign="top" rowspan="1" colspan="1">Microarchitecture Name</th>
-</tr>
-</thead>
-	<tbody>
-		<tr>
-			<td>1.0</td>
-			<td rowspan="4">Tesla</td>
-		</tr>
-		<tr>
-			<td>1.1</td>
-		</tr>
-		<tr>
-			<td>1.2</td>
-		</tr>
-		<tr>
-			<td>1.3</td>
-		</tr>
-		<tr>
-			<td>2.0</td>
-			<td rowspan="2">Fermi</td>
-		</tr>
-		<tr>
-			<td>2.1</td>
-		</tr>
-		<tr>
-			<td>3.0</td>
-			<td rowspan="4">Kepler</td>
-		</tr>
-		<tr>
-			<td>3.2</td>
-		</tr>
-		<tr>
-			<td>3.5</td>
-		</tr>
-		<tr>
-			<td>3.7</td>
-		</tr>
-		<tr>
-			<td>5.0</td>
-			<td rowspan="3">Maxwell</td>
-		</tr>
-		<tr>
-			<td>5.2</td>
-		</tr>
-		<tr>
-			<td>5.3</td>
-		</tr>
-		<tr>
-			<td>6.0</td>
-			<td rowspan="3">Pascal</td>
-		</tr>
-		<tr>
-			<td>6.1</td>
-		</tr>
-		<tr>
-			<td>6.2</td>
-		</tr>
-		<tr>
-			<td>7.0</td>
-			<td rowspan="2">Volta</td>
-		</tr>
-		<tr>
-			<td>7.2</td>
-		</tr>
-		<tr>
-			<td>7.5</td>
-			<td>Turing</td>
-		</tr>
-		<tr>
-			<td>8.0</td>
-			<td rowspan="2">Ampere</td>
-		</tr>
-		<tr>
-			<td><span style="color:green">8.6</span></td>
-		</tr>
-	</tbody>
-</table>
+| Version Number | Microarchitecture Name |
+| --- | --- |
+| 1.0 | Tesla |
+| 1.1 |
+| 1.2 |
+| 1.3 |
+| 2.0 | Fermi |
+| 2.1 |
+| 3.0 | Kepler |
+| 3.2 |
+| 3.5 |
+| 3.7 |
+| 5.0 | Maxwell |
+| 5.2 |
+| 5.3 |
+| 6.0 | Pascal |
+| 6.1 |
+| 6.2 |
+| 7.0 | Volta |
+| 7.2 |
+| 7.5 | Turing |
+| 8.0 | Ampere |
+| 8.6 |
 
- 
 An interim summary of the version information for the various components, as the constituent components in the toolkit are versioned independently as of CUDA v11, are shown in Table 4 below:
 
 **Table 4: CUDA 11 Component Version Information**
-<table>
-<thead class="thead" align="left">
-<tr class="row">
-<th class="entry" align="center" valign="top" rowspan="1" colspan="1">Component Name</th>
-<th class="entry" align="center" valign="top" rowspan="1" colspan="1">Version Number</th>
-<th class="entry" align="center" valign="top" rowspan="1" colspan="1">Supported Architectures</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUDA Runtime (cudart)</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">11.0.221</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">cuobjdump</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">11.0.221</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUPTI</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">11.0.221</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUDA Demo Suite</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">11.0.167</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUDA GDB</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">11.0.221</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUDA Memcheck</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">11.0.221</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUDA NVCC</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">11.0.221</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUDA nvdisasm</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">11.0.221</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUDA NVML Headers</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">11.0.167</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUDA nvprof</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">11.0.221</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUDA nvprune</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">11.0.221</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUDA NVRTC</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">11.0.221</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUDA NVTX</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">11.0.167</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUDA NVVP</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">11.0.221</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUDA Samples</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">11.0.221</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUDA Compute Sanitizer API</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">11.0.221</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUDA cuBLAS</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">11.2.0.252</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUDA cuFFT</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">10.2.1.245</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUDA cuRAND</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">10.2.1.245</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUDA cuSOLVER</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">10.6.0.245</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUDA cuSPARSE</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">11.1.1.245</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUDA NPP</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">11.1.0.245</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">CUDA nvJPEG</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">11.1.1.245</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">Nsight Eclipse Plugins</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">11.0.221</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">Nsight Compute</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">2020.1.2.4</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">Nsight Windows NVTX</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">1.21018621</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">Nsight Systems</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">2020.3.2.6</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">Nsight Visual Studio Edition (VSE)</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">2020.1.2.20203</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64 (Windows)</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">NVIDIA Linux Driver</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">450.51.06</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64, POWER, Arm64</td>
-</tr>
-<tr class="row">
-<td class="entry" valign="top"  rowspan="1" colspan="1">NVIDIA Windows Driver</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">451.82</td>
-<td class="entry" valign="top"  rowspan="1" colspan="1">x86_64 (Windows)</td>
-</tr>
-</tbody>
-</table>
+| Component Name | Version Number | Supported Architectures |
+| --- | --- | --- |
+| CUDA Runtime (cudart) | 11.0.221 | x86_64, POWER, Arm64 |
+| cuobjdump | 11.0.221 | x86_64, POWER, Arm64 |
+| CUPTI | 11.0.221 | x86_64, POWER, Arm64 |
+| CUDA Demo Suite | 11.0.167 | x86_64 |
+| CUDA GDB | 11.0.221 | x86_64, POWER, Arm64 |
+| CUDA Memcheck | 11.0.221 | x86_64, POWER |
+| CUDA NVCC | 11.0.221 | x86_64, POWER, Arm64 |
+| CUDA nvdisasm | 11.0.221 | x86_64, POWER, Arm64 |
+| CUDA NVML Headers | 11.0.167 | x86_64, POWER, Arm64 |
+| CUDA nvprof | 11.0.221 | x86_64, POWER, Arm64 |
+| CUDA nvprune | 11.0.221 | x86_64, POWER, Arm64 |
+| CUDA NVRTC | 11.0.221 | x86_64, POWER, Arm64 |
+| CUDA NVTX | 11.0.167 | x86_64, POWER, Arm64 |
+| CUDA NVVP | 11.0.221 | x86_64, POWER |
+| CUDA Samples | 11.0.221 | x86_64, POWER, Arm64 |
+| CUDA Compute Sanitizer API | 11.0.221 | x86_64, POWER, Arm64 |
+| CUDA cuBLAS | 11.2.0.252 | x86_64, POWER, Arm64 |
+| CUDA cuFFT | 10.2.1.245 | x86_64, POWER, Arm64 |
+| CUDA cuRAND | 10.2.1.245 | x86_64, POWER, Arm64 |
+| CUDA cuSOLVER | 10.6.0.245 | x86_64, POWER, Arm64 |
+| CUDA cuSPARSE | 11.1.1.245 | x86_64, POWER, Arm64 |
+| CUDA NPP | 11.1.0.245 | x86_64, POWER, Arm64 |
+| CUDA nvJPEG | 11.1.1.245 | x86_64, POWER, Arm64 |
+| Nsight Eclipse Plugins | 11.0.221 | x86_64, POWER |
+| Nsight Compute | 2020.1.2.4 | x86_64, POWER, Arm64 |
+| Nsight Windows NVTX | 1.21018621 | x86_64, POWER, Arm64 |
+| Nsight Systems | 2020.3.2.6 | x86_64, POWER, Arm64 |
+| Nsight Visual Studio Edition (VSE) | 2020.1.2.20203 | x86_64 (Windows) |
+| NVIDIA Linux Driver | 450.51.06 | x86_64, POWER, Arm64 |
+| NVIDIA Windows Driver | 451.82 | x86_64 (Windows) |
 Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/
 
 <br/>
@@ -445,53 +257,45 @@ Further CUDA library information can be found here: https://docs.nvidia.com/cuda
 An interim summary of the CUDA toolkit versions (ranging from 1.0 through 11.2.0) are shown in Table 5 below:
 
 **Table 5: CUDA Toolkit Version Information**
-<table>
-<tr><td>Toolkit Version Number</td><td>Release Date</td></tr>
-<tr><td><span style="color:green">11.2.0</span></td><td>Dec 2020</td></tr>
-<tr><td>11.1.1</td><td>Oct 2020</td></tr>
-<tr><td>11.1.0</td><td>Sept 2020</td></tr>
-<tr><td>11.0 Update 1</td><td>Aug 2020</td></tr>
-<tr><td>11.0</td><td>May 2020</td></tr>
-<tr><td>10.2</td><td>Nov 2019</td></tr>
-<tr><td>10.1 Update 2</td><td>Aug 2019</td></tr>
-<tr><td>10.1 Update 1</td><td>May 2019</td></tr>
-<tr><td>10.1</td><td>Feb 2019</td></tr>
-<tr><td>10.0</td><td>Sept 2018</td></tr>
-<tr><td>9.2</td><td>May 2018</td></tr>
-<tr><td>9.1</td><td>Dec 2017</td></tr>
-<tr><td>9.0</td><td>Sept 2017</td></tr>
-<tr><td>8.0 GA 2</td><td>Feb 2017</td></tr>
-<tr><td>8.0 GA 1</td><td>Sept 2016</td></tr>
-<tr><td>7.5</td><td>Sept 2015</td></tr>
-<tr><td>7.0</td><td>March 2015</td></tr>
-<tr><td>6.5</td><td>August 2014</td></tr>
-<tr><td>6.0</td><td>April 2014</td></tr>
-<tr><td>5.5</td><td>July 2013</td></tr>
-<tr><td>5.0</td><td>Oct 2012</td></tr>
-<tr><td>4.2</td><td>April 2012</td></tr>
-<tr><td>4.1</td><td>Jan 2012</td></tr>
-<tr><td>4.0</td><td>May 2011</td></tr>
-<tr><td>3.2</td><td>Nov 2010</td></tr>
-<tr><td>3.1</td><td>June 2010</td></tr>
-<tr><td>3.0</td><td>March 2010</td></tr>
-<tr><td>Open Computing Language (OpenCL) Release 1.0 </td><td>Sept 2009</td></tr>
-<tr><td>2.3</td><td>June 2009</td></tr>
-<tr><td>2.2</td><td>May 2009</td></tr>
-<tr><td>2.1</td><td>Jan 2009</td></tr>
-<tr><td>2.0</td><td>Aug 2008</td></tr>
-<tr><td>1.1</td><td>Dec 2007</td></tr>
-<tr><td>1.0</td><td>June 2007</td></tr>
-</table>
+|     |     |
+| --- | --- |
+| Toolkit Version Number | Release Date |
+| **11.2.0** | Dec 2020 |
+| 11.1.1 | Oct 2020 |
+| 11.1.0 | Sept 2020 |
+| 11.0 Update 1 | Aug 2020 |
+| 11.0 | May 2020 |
+| 10.2 | Nov 2019 |
+| 10.1 Update 2 | Aug 2019 |
+| 10.1 Update 1 | May 2019 |
+| 10.1 | Feb 2019 |
+| 10.0 | Sept 2018 |
+| 9.2 | May 2018 |
+| 9.1 | Dec 2017 |
+| 9.0 | Sept 2017 |
+| 8.0 GA 2 | Feb 2017 |
+| 8.0 GA 1 | Sept 2016 |
+| 7.5 | Sept 2015 |
+| 7.0 | March 2015 |
+| 6.5 | August 2014 |
+| 6.0 | April 2014 |
+| 5.5 | July 2013 |
+| 5.0 | Oct 2012 |
+| 4.2 | April 2012 |
+| 4.1 | Jan 2012 |
+| 4.0 | May 2011 |
+| 3.2 | Nov 2010 |
+| 3.1 | June 2010 |
+| 3.0 | March 2010 |
+| Open Computing Language (OpenCL) Release 1.0 | Sept 2009 |
+| 2.3 | June 2009 |
+| 2.2 | May 2009 |
+| 2.1 | Jan 2009 |
+| 2.0 | Aug 2008 |
+| 1.1 | Dec 2007 |
+| 1.0 | June 2007 |
 *Source: https://developer.nvidia.com/cuda-toolkit-archive*<br/>
 *Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/*
-
-## Interim Findings ##
-
-As of this commit, to utilize the BFloat16 data type:<br/>
-CUDA Software Development Kit (SDK) v11.0 (or higher) must be utilized; the most recent CUDA SDK is v11.2.<br/>
-The most recent version of CUDA.jl requires Julia v1.6.0 (or higher).<br/>
-The most recent version of CUDA.jl requires a CUDA compute capability version of 5.0 (or higher); the most recent CUDA compute capability is v8.6.<br/>
-
 
 
 
