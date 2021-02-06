@@ -128,26 +128,26 @@ An interim summary of the CUDA compute capability versions (ranging from 1.0 thr
 | Version Number | Microarchitecture Name |
 | --- | --- |
 | 1.0 | Tesla |
-| 1.1 |
-| 1.2 |
-| 1.3 |
+| 1.1 | Tesla |
+| 1.2 | Tesla |
+| 1.3 | Tesla |
 | 2.0 | Fermi |
-| 2.1 |
+| 2.1 | Fermi |
 | 3.0 | Kepler |
-| 3.2 |
-| 3.5 |
-| 3.7 |
+| 3.2 | Kepler |
+| 3.5 | Kepler |
+| 3.7 | Kepler |
 | 5.0 | Maxwell |
-| 5.2 |
-| 5.3 |
+| 5.2 | Maxwell |
+| 5.3 | Maxwell |
 | 6.0 | Pascal |
-| 6.1 |
-| 6.2 |
+| 6.1 | Pascal |
+| 6.2 | Pascal |
 | 7.0 | Volta |
-| 7.2 |
+| 7.2 | Volta |
 | 7.5 | Turing |
 | 8.0 | Ampere |
-| 8.6 |
+| 8.6 | Ampere |
 
 An interim summary of the version information for the various components, as the constituent components in the toolkit are versioned independently as of CUDA v11, are shown in Table 4 below:
 
@@ -294,6 +294,7 @@ An interim summary of the CUDA toolkit versions (ranging from 1.0 through 11.2.0
 | 2.0 | Aug 2008 |
 | 1.1 | Dec 2007 |
 | 1.0 | June 2007 |
+
 *Source: https://developer.nvidia.com/cuda-toolkit-archive*<br/>
 *Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/*
 
