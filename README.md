@@ -56,6 +56,10 @@ Depending on the GPU type, there are particular NVIDIA driver versions required 
 
 The CUDA Software Development Kit (SDK) v11.0 – v11.2 supports the delineated BFloat16 data type. A principal benefit of BFloat16 is to reduce the storage requirements and increase the computational speed of DL algorithms. NVIDIA GPU-Accelerated Server Platforms, running CUDA SDK v11.0+, whether on-premise (a.k.a. on-prem) or in the cloud, can leverage BFloat16; BFloat16 is an excellent alternative to the IEEE 754 16-bit Floating Point (FP16) format, for although it has reduced precision, it has the numerical range of FP32.
 
+## GNU Octave ##
+
+The chosen platform for the experimentation herein has been the GNU Octave platform. As a numerical computation platform, it is mostly compatible with comparable platforms, such as MATLAB; however, as GNU Octave is released under a GNU GPLv3 license, the source code was modified for the experiments conducted herein, which resulted in a Modified GNU Octave (M-GNU-O) platform that can better leverage certain accelerants. In addition to GNU Octave, Julia was utilized as well.
+
 ## Julia ##
 
 Among other high-performance programming languages (e.g., GNU Octave, Go, NumPy, etc.), Julia is a high-level, high-performance programming language, which was designed for numerical analysis and computational science.
