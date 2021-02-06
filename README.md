@@ -147,7 +147,7 @@ An interim summary of the CUDA compute capability versions (ranging from 1.0 thr
 | 7.2 | Volta |
 | 7.5 | Turing |
 | 8.0 | Ampere |
-| 8.6 | Ampere |
+| **8.6** | Ampere |
 
 An interim summary of the version information for the various components, as the constituent components in the toolkit are versioned independently as of CUDA v11, are shown in Table 4 below:
 
