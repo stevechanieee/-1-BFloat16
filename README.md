@@ -420,22 +420,23 @@ The cuSPARSE library subroutines can be classified into four categories:
 
 *Source:https://docs.nvidia.com/cuda/cusparse/index.html*
 
-In numerical analysis and scientific computing, a sparse matrix (a.k.a. sparse array) is a matrix, wherein most of the elements are zero. There is no strict definition for many elements need to be zero for a matrix to be considered sparse. However, some of the more universally acknowledged criterion include, "the number of non-zero elements is roughly the number of rows or columns." In contrast, if the majority of the elements are non-zero, then the matrix is considered dense. The sparsity of the matrix = count for the zero elements / count for the total elements.
+In numerical analysis and scientific computing, a sparse matrix (a.k.a. sparse array) is a matrix, wherein most of the elements are zero. There is no strict definition regarding how many elements are zero for a matrix to be considered sparse. However, one of the more universally acknowledged criterion asserts, "the number of non-zero elements is roughly the number of rows or columns." In contrast, if the majority of the elements are non-zero, then the matrix is considered dense. The sparsity of the matrix = count for the zero elements / count for the total elements.
 
 The following are exemplars of efficient structures for constructing sparse matrices:
 * Dictionary of keys (DOK)-based sparse matrix: the array is represented as a dictionary that maps pairs (row, column) to the value of the elements.
 * List of Lists (LIL)-based sparse matrix: the array is represented as a list of rows, and each row is represented as list of pairs (index position, value).
 * Coordinate list (COO)-based sparse matrix: the array is represented as a list of tuples (row, column, value).
-* Compressed Sparse Column (CSC) or Compressed Column Storage (CCS) (a.k.a. Harwell-Boeing sparse matrix format): specified by the arrays {val, row_ind, col_ptr}, where val stores the nonzero elements of the matrix (i.e., the floating-point numbers), row_ind stores the row indices of each nonzero element, and col_ptr stores the index of the elements in val which start a column of matrix A.
-* Compressed Sparse Row (CSR) or Compressed Row Storage (CRS)(a.k.a. Yale sparse matrix format): specified by the arrays {val, col_ind, row_ptr}, where val stores the nonzero elements of the matrix (i.e., the floating-point numbers), col_ind stores the column indices of each nonzero element, and row_ptr stores the index of the elements in val which start a column of matrix A.
+* Compressed Sparse Column (CSC) or Compressed Column Storage (CCS) (a.k.a. Harwell-Boeing sparse matrix format): specified by the arrays {val, row_ind, col_ptr}, where val stores the non-zero elements of the matrix (i.e., the floating-point numbers), row_ind stores the row indices of each nonzero element, and col_ptr stores the index of the elements in val which start a column of matrix A.
+* Compressed Sparse Row (CSR) or Compressed Row Storage (CRS)(a.k.a. Yale sparse matrix format): specified by the arrays {val, col_ind, row_ptr}, where val stores the non-zero elements of the matrix (i.e., the floating-point numbers), col_ind stores the column indices of each nonzero element, and row_ptr stores the index of the elements in val which start a column of matrix A.
 
-It should be axiomatic that operations involving standard dense matrix structures expend processing and storage on the zeros. Sparse matrix structures are more easily compressed and, therefore, require significantly processing and storage. 
+It should be axiomatic that operations involving standard dense matrix structures expend a great deal of processing and storage for the zeros. Sparse matrix structures are, theoretically, more easily compressed and, therefore, require significantly less processing and storage. 
 
-The utilized data types might include: 
+Depending upon the permissibility of rounding, the following data types may be used:
 float: a single precision 32-bit IEEE 754 floating point format. 
 double: a double precision 64-bit IEEE 754 floating point format. 
 decimal: will 100% accurately represent any number, whereas float and double are not able to accurately represent all numbers.
 
+Other data types, which are available from the CUDA library, include:
 cuComplex: creates a new complex single precision number consisting of the given real and imaginary part. 
 cuDoubleComplex: creates a new complex double precision number consisting of the given real and imaginary part. 
 
