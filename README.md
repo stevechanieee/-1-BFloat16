@@ -48,7 +48,7 @@ Depending on the GPU type, there are particular NVIDIA driver versions required 
 
 | GPU Type    | GPU Description | Minimum Required NVIDIA Driver Version | NVIDIA Driver Version Release Date | Minimum Recommended CUDA Software Development Kit/Toolkit Version |
 |-------------|-----------------|-----------------------|------------------------------------|------------------------------------------|
-| NVIDIA A100 | Tensor Core GPU | Linux: 450.80.02      | 9/30/20                            | Linux: CUDA Toolkit 11.1                 |
+| NVIDIA A100 | Tensor Core GPU | **Linux: 450.80.02**      | 9/30/20                            | Linux: CUDA Toolkit 11.1                 |
 | All other   | e.g., TPU       | **Linux : NVIDIA 410.79** | 2/27/20                            | Linux: CUDA Toolkit 11.1             |
 | NVIDIA T4   | Tensor Core GPU | Linux: 410.79         | 12/3/18                            | Linux: CUDA Toolkit 10.1 update2         |
 
@@ -302,10 +302,10 @@ An interim summary of the CUDA toolkit versions (ranging from 1.0 through 11.2.0
 ### Interim Findings ###
 
 As of this commit, to utilize the BFloat16 data type:<br/>
-CUDA Software Development Kit (SDK) v11.0 (or higher) must be utilized; the most current CUDA SDK is v11.2.<br/>
-The most recent version of CUDA.jl requires Julia v1.6.0 (or higher).<br/>
-The most recent version of CUDA.jl requires a CUDA compute capability version of 5.0 (or higher); the most current CUDA compute capability is v8.6.
-The on-prem component, will likely require 450.80.02 drivers; the cloud component will likely require 410.79.
+* CUDA Software Development Kit (SDK) v11.0 (or higher) must be utilized; the most current CUDA SDK is v11.2.<br/>
+* The most recent version of CUDA.jl requires Julia v1.6.0 (or higher).<br/>
+* The most recent version of CUDA.jl requires a CUDA compute capability version of 5.0 (or higher); the most current CUDA compute capability is v8.6.
+* The on-prem component, will likely require 450.80.02 drivers; the cloud component will likely require 410.79.
 
 
 
