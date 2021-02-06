@@ -36,7 +36,7 @@ By way of background information, the BFloat16 floating-point format for DL is a
 
 For an involved cloud instance (i.e., a virtual machine running a workload in a cloud computing environment), various drivers, toolkits, and runtime are needed for the involved cloud computing environment. This might include, by way of example, the following: (1) NVIDIA driver, (2) Compute Unified Device Architecture (CUDA) toolkit, and (3) CUDA runtime.
 
-*Source:https://cloud.google.com/compute/docs/gpus/install-drivers-gpu*
+*Source: https://cloud.google.com/compute/docs/gpus/install-drivers-gpu*
 
 ## Graphics Processing Unit Programming Framework ##
 
@@ -51,7 +51,7 @@ Depending on the GPU type, there are particular NVIDIA driver versions required 
 | NVIDIA A100 | Tensor Core GPU | Linux: 450.80.02      | 9/30/20                            | Linux: CUDA Toolkit 11.1                 |
 | NVIDIA T4   | Tensor Core GPU | Linux: 410.79         | 12/3/18                            | Linux: CUDA Toolkit 10.1 update2         |
 
-*Source:https://cloud.google.com/compute/docs/gpus/install-drivers-gpu*
+*Source: https://cloud.google.com/compute/docs/gpus/install-drivers-gpu*
 
 The CUDA Software Development Kit (SDK) v11.0 – v11.2 supports the delineated BFloat16 data type. A principal benefit of BFloat16 is to reduce the storage requirements and increase the computational speed of DL algorithms. NVIDIA GPU-Accelerated Server Platforms, running CUDA SDK v11.0+, whether on-premise (a.k.a. on-prem) or in the cloud, can leverage BFloat16; BFloat16 is an excellent alternative to the IEEE 754 16-bit Floating Point (FP16) format, for although it has reduced precision, it has the numerical range of FP32.
 
@@ -61,7 +61,7 @@ Among other high-performance programming languages, Julia is a high-level, high-
 
 JuliaMath (i.e., mathematics made easy in Julia) defines the BFloat16 data type. 
 
-*Source:https://github.com/JuliaMath/BFloat16s.jl*
+*Source: https://github.com/JuliaMath/BFloat16s.jl*
 
 JuliaGPU "is a Github organization created to unify the many packages for programming GPUs in Julia;" JuliaGPU is also described as a "high-performance GPU programming in a high-level language."
 
@@ -406,17 +406,17 @@ Overall, the dropped features include:
 * Batched Tridiagonal Solver: cusparseXgtsvStridedBatch<br/>
 * Reordering: cusparseXcsc2hyb, cusparseXcsr2hyb, cusparseXdense2hyb, cusparseXhyb2csc, cusparseXhyb2csr, cusparseXhyb2dense<br/>
 
-*Source:https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/#deprecated-features*
+*Source: https://docs.nvidia.com/cuda/archive/11.0/cuda-toolkit-release-notes/#deprecated-features*
 
 The cusparse (a.k.a. cuSPARSE) library contains basic linear algebra subroutines (i.e., a set of instructions designed to perform a frequently utilized operation), which are geared for handling sparse matrices, particularly those sparse matrices, whose number of zero elements represent > 95% of the total entries.
 
-*Source:https://docs.nvidia.com/cuda/cusparse/index.html*
+*Source: https://docs.nvidia.com/cuda/cusparse/index.html*
 
 The cuSPARSE library subroutines can be classified into four categories:
-Level 1: operations between a vector in sparse format and a vector in dense format;<br/>
-Level 2: operations between a matrix in sparse format and a vector in dense format;<br/>
-Level 3: operations between a matrix in sparse format and a set of vectors in dense format (which can also usually be viewed as a dense tall matrix);<br/>
-Conversion: operations that allow conversion between different matrix formats, and compression of csr matrices.<br/>
+1. operations between a vector in sparse format and a vector in dense format;<br/>
+2. operations between a matrix in sparse format and a vector in dense format;<br/>
+3. operations between a matrix in sparse format and a set of vectors in dense format (which can also usually be viewed as a dense tall matrix);<br/>
+4. operations that allow conversion between different matrix formats, and compression of Compressed Sparse Row (CSR) matrices.<br/>
 
 *Source:https://docs.nvidia.com/cuda/cusparse/index.html*
 
