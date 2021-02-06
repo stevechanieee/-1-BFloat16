@@ -57,13 +57,13 @@ The CUDA Software Development Kit (SDK) v11.0 – v11.2 supports the delineated 
 
 ## Julia ##
 
-Julia is a high-level, high-performance programming language, which was designed for numerical analysis and computational science.
+Among other high-performance programming languages, Julia is a high-level, high-performance programming language, which was designed for numerical analysis and computational science.
 
 JuliaMath (i.e., mathematics made easy in Julia) defines the BFloat16 data type. 
 
 *Source:https://github.com/JuliaMath/BFloat16s.jl*
 
-JuliaGPU "is a Github organization created to unify the many packages for programming GPUs in Julia." JuliaGPU is also described as a "high-performance GPU programming in a high-level language."
+JuliaGPU "is a Github organization created to unify the many packages for programming GPUs in Julia;" JuliaGPU is also described as a "high-performance GPU programming in a high-level language."
 
 *Source: https://juliagpu.org*
 
