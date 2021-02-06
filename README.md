@@ -89,7 +89,7 @@ For convenience, Julia version information is provided in Table 2 below.
 | v1.5.1               | 8/25/20      |
 | v1.5.2               | 9/24/20      |
 | v1.5.3               | 11/9/20      |
-| v1.6.0-beta          | 1/8/21       |
+| <span style="color:green">v1.6.0-beta</span>          | 1/8/21       |
 
 As can be seen, the most current version is Julia v1.6.0.
 
@@ -202,7 +202,7 @@ An interim summary of the CUDA compute capability versions (ranging from 1.0 thr
 			<td rowspan="2">Ampere</td>
 		</tr>
 		<tr>
-			<td>8.6</td>
+			<td><span style="color:green">8.6</span></td>
 		</tr>
 	</tbody>
 </table>
@@ -447,7 +447,7 @@ An interim summary of the CUDA toolkit versions (ranging from 1.0 through 11.2.0
 **Table 5: CUDA Toolkit Version Information**
 <table>
 <tr><td>Toolkit Version Number</td><td>Release Date</td></tr>
-<tr><td>11.2.0</td><td>Dec 2020</td></tr>
+<tr><td><span style="color:green">11.2.0</span></td><td>Dec 2020</td></tr>
 <tr><td>11.1.1</td><td>Oct 2020</td></tr>
 <tr><td>11.1.0</td><td>Sept 2020</td></tr>
 <tr><td>11.0 Update 1</td><td>Aug 2020</td></tr>
@@ -488,7 +488,7 @@ An interim summary of the CUDA toolkit versions (ranging from 1.0 through 11.2.0
 ## Interim Findings ##
 
 As of this commit, to utilize the BFloat16 data type:<br/>
-CUDA Software Development Kit (SDK) v11.0 – v11.2 must be utilized.<br/>
+CUDA Software Development Kit (SDK) v11.0 (or higher) must be utilized; the most recent CUDA SDK is v11.2.<br/>
 The most recent version of CUDA.jl requires Julia v1.6.0 (or higher).<br/>
 The most recent version of CUDA.jl requires a CUDA compute capability version of 5.0 (or higher); the most recent CUDA compute capability is v8.6.<br/>
 
