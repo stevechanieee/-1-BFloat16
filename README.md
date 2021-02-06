@@ -305,7 +305,7 @@ As of this commit, to utilize the BFloat16 data type:<br/>
 * CUDA Software Development Kit (SDK) v11.0 (or higher) must be utilized; the most current CUDA SDK is v11.2.<br/>
 * The most recent version of CUDA.jl requires Julia v1.6.0 (or higher).<br/>
 * The most recent version of CUDA.jl requires a CUDA compute capability version of 5.0 (or higher); the most current CUDA compute capability is v8.6.
-* The on-prem component, will likely require 450.80.02 drivers; the cloud component will likely require 410.79.
+* The on-prem component, will likely require 450.80.02 drivers; the cloud component will likely require 410.79 (for initial testing purposes).
 
 
 
