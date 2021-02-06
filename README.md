@@ -16,11 +16,15 @@ Typically, cloud platform providers natively support a variety of ML and DL fram
 
 *Source: https://www.spglobal.com/marketintelligence/en/news-insights/latest-news-headlines/microsoft-designs-data-center-chip-to-compete-with-amazon-intel-8211-report-61823358*
 
-On 1 December 2020, Amazon Web Services (AWS) debuted AWS Trainium (a custom processor for ML model training in the cloud). In 2017, Google announced their Tensor Processing Unit (TPU) (a custom processor for ML), and these were made available a year later in the cloud; on 29 July 2020, Google debuted its fourth-generation TPUs. Overall, the custom processors of the various cloud platform providers are considered to be AI accelerator Application-Specific Integrated Circuits (ASICs). 
+On 1 December 2020, Amazon Web Services (AWS) debuted AWS Trainium (a custom processor for ML model training in the cloud). In 2017, Google announced its first-generation Tensor Processing Unit (TPU) (a custom processor for ML), and these were made available a year later in the cloud; on 29 July 2020, Google debuted its fourth-generation TPUs. 
 
 *Source: https://aws.amazon.com/ec2/graviton/*<br/>
 *Source: https://medium.com/sciforce/understanding-tensor-processing-units-10ff41f50e78*<br/>
 *Source: https://venturebeat.com/2020/07/29/google-claims-its-new-tpus-are-2-7-times-faster-than-the-previous-generation/*
+
+Overall, the custom processors of the various cloud platform providers are considered to be AI accelerator Application-Specific Integrated Circuits (ASICs). The cost of ASICs has decreased dramatically, as the prevalence of ASICs has grown amidst the "drive to create cutting-edge artificial-intelligence chips and cloud-computing services" by various technology companies (e.g., Facebook, Tesla).
+
+*Source: https://www.electronicdesign.com/technologies/embedded-revolution/article/21808278/the-economics-of-asics-at-what-point-does-a-custom-soc-become-viable*
 
 ## Custom Processors in the Cloud ##
 
