@@ -34,7 +34,7 @@ By way of background information, the Bfloat16 floating-point format for DL is a
 
 ## Cloud Platform Instance ##
 
-For the involved cloud instance (i.e., a virtual machine running a workload in a cloud computing environment), various drivers, toolkits, and runtime are needed for the involved cloud computing environment. This might include, by way of example, the following: (1) NVIDIA driver, (2) Compute Unified Device Architecture (CUDA) toolkit, and (3) CUDA runtime.
+For an involved cloud instance (i.e., a virtual machine running a workload in a cloud computing environment), various drivers, toolkits, and runtime are needed for the involved cloud computing environment. This might include, by way of example, the following: (1) NVIDIA driver, (2) Compute Unified Device Architecture (CUDA) toolkit, and (3) CUDA runtime.
 
 *Source:https://cloud.google.com/compute/docs/gpus/install-drivers-gpu*
 
