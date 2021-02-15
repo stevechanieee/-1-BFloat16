@@ -42,6 +42,10 @@ For an involved cloud instance (i.e., a virtual machine running a workload in a 
 
 *Source: https://cloud.google.com/compute/docs/gpus/install-drivers-gpu*
 
+In general, increasing the size of the involved neural network results in enhanced accuracy. However, as the neural network grows, the memory and computational requirements also grow. Being in the cloud, scalability is readily accommodated. 
+
+*Source: https://arxiv.org/abs/1710.03740*
+
 ## Graphics Processing Unit Programming Framework ##
 
 CUDA and OpenCL are both Graphics Processing Unit (GPU) programming frameworks, which leverage the use of GPUs and their custom processors. Whereas CUDA is proprietary to NVIDIA, OpenCL is an open standard maintained by the Khronos Group consortium, whose members are listed here: https://www.khronos.org/members/list. 
