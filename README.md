@@ -84,6 +84,10 @@ According to JuliaGPU.org (https://juliagpu.org), "the best supported GPU platfo
 
 ## CUDA Progamming in Julia (CUDA.jl) ##
 
+CUDA.jl integrates, by design, with the reference Python compilers, so it is oriented for consistent semantics. In contrast, PyCUDA is sub-optimal when compared to Numba with regards to matching the reference Python compilers; moreover, Numba and other disparate compilers endeavor to match the reference Python compilers as closely as possible, but there may be issues.
+
+*Source: https://notamonadtutorial.com/julia-gpu-98a461d33e21*
+
 The Julia version release history is available here:
 https://github.com/JuliaLang/julia/releases
 
