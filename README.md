@@ -32,6 +32,10 @@ As previously discussed, to facilitate ML workloads (typically computationally i
 
 By way of background information, the BFloat16 floating-point format for DL is an encoding format, which occupies 16 bits and represents a floating-point number. It is of the format [1:8:7], which has one sign bit, eight exponent bits, and seven mantissa bits (e.g., fraction field) plus one implicit mantissa bit. This differs from the IEEE Standard for Floating Point Arithmetic (IEEE 754) 16-bit floating point format (the IEEE 754 16-bit floating point format is assumed to have an implicit lead bit with value 1 unless the exponent field is stored with all zeros; hence, although there are only 10 bits of significand, there are 11 bits of significand precision), which was not designed for DL. The floating-point format is comprised of three binary fields: +/- mantissa * 2^exponent (i.e., the sign bit field of +/-, the exponent field of ^exponent, and the fraction field of mantissa).
 
+In essence, Bfloat16 follows the same format as a standard IEEE 754 single-precision 32-bit floating-point format, but truncates the mantissa field from 23 bits to just 7 bits. Preserving the exponent bits keeps the format to the same range as the 32-bit single-precision floating-point (~1e-38 to ~3e38).
+
+Source: https://en.wikichip.org/wiki/brain_floating-point_format
+
 ## Cloud Platform Instance ##
 
 For an involved cloud instance (i.e., a virtual machine running a workload in a cloud computing environment), various drivers, toolkits, and runtime are needed for the involved cloud computing environment. This might include, by way of example, the following: (1) NVIDIA driver, (2) Compute Unified Device Architecture (CUDA) toolkit, and (3) CUDA runtime.
